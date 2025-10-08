@@ -1,0 +1,14 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090C14"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="600" cy="315" r="260" fill="#00D4FF" opacity="0.08"/>
+  <text x="600" y="290" text-anchor="middle" font-family="DM Sans, Inter, Arial" font-size="54" font-weight="700" fill="#E6F6FF">Blujet AI</text>
+  <text x="600" y="340" text-anchor="middle" font-family="Inter, Arial" font-size="24" fill="#B9D7E4">AI Voice Agent for E-commerce</text>
+  <text x="600" y="380" text-anchor="middle" font-family="Inter, Arial" font-size="18" fill="#8FBED1">Recover abandoned checkouts and grow revenue</text>
+</svg>
+
