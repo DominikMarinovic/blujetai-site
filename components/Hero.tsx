@@ -45,7 +45,7 @@ export default function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="mt-5 sm:text-[22px] sm:leading-tight text-[18px] sm:pt-4 font-medium text-stone-600"
+              className="mt-5 sm:text-[22px] sm:leading-tight text-[16px] sm:pt-4 font-medium text-stone-600"
             >
               {heroCopy.subhead}
             </motion.p>
