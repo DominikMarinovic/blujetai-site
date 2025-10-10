@@ -65,12 +65,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
+
+        <script
+          type="text/javascript"
+          src="https://app.iclosed.io/assets/widget.js"
+          data-cta-widget="EyGnQmcqM2Qn"
+          async
+        ></script>
       </head>
       <body className="min-h-screen bg-grid-radial text-black">
         <a href="#main" className="skip-link">
           Skip to content
         </a>
-                <PromoBanner />
+        <PromoBanner />
         <Navbar />
         <main id="main">{children}</main>
         <Footer />
