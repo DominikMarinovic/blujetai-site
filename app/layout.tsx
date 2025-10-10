@@ -4,8 +4,10 @@ import { Inter, DM_Sans } from "next/font/google"
 // next-seo components removed for App Router compatibility
 import { site } from "@/content/site"
 import { IClosedWidget } from "@/components/IClosedWidget"
+import PilotScrollManager from "@/components/PilotScrollManager"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import PromoBanner from "@/components/PromoBanner"
 import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -63,16 +65,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
-        <script key="iclosed-global" src="https://app.iclosed.io/assets/widget.js" async />
       </head>
       <body className="min-h-screen bg-grid-radial text-black">
         <a href="#main" className="skip-link">
           Skip to content
         </a>
+                <PromoBanner />
         <Navbar />
         <main id="main">{children}</main>
         <Footer />
         <IClosedWidget />
+        <PilotScrollManager />
         <Analytics />
       </body>
     </html>

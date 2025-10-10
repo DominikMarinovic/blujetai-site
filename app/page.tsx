@@ -3,7 +3,7 @@ import FeatureGrid from "@/components/FeatureGrid"
 import CostsOfInaction from "@/components/CostsOfInaction"
 import AiRecoveryFlow from "@/components/AiRecoveryFlow"
 import CaseStudies from "@/components/CaseStudies"
-import SubscriptionChallenges from "@/components/SubscriptionChallenges"
+import OldPlaybook from "@/components/OldPlaybook"
 import BeforeAfter from "@/components/BeforeAfter"
 import RoiCalculator from "@/components/RoiCalculator"
 import Faq from "@/components/Faq"
@@ -18,12 +18,11 @@ export default function Page() {
     <>
       <Hero />
       <CostsOfInaction />
+      <OldPlaybook />
       <AiRecoveryFlow />
-      <StatsStrip />
-      <SubscriptionChallenges />
       <HowWeWork />
       <CaseStudies />
-      <RoiCalculator />
+      <StatsStrip />
       <Faq />
     </>
   )

@@ -5,7 +5,7 @@ export const site = {
   url: "https://blujet.ai",
   ogImage: "/og.svg",
   nav: [],
-  cta: { label: "Calculate Recovery ROI", href: "#roi" },
+  cta: { label: "Calculate Recovery ROI", href: "#pilot-widget" },
   socials: {
     x: "https://twitter.com/",
     github: "https://github.com/",
@@ -43,9 +43,9 @@ export const heroCopy = {
   badge: "For Brands Doing over 100k/month",
   headline: "Recover +10–20% more revenue from the same traffic with AI Voice + SMS.",
   subhead:
-    "We Turn Abandoned Carts into Orders and Increase Subscriptions with AI Recovery System so you can grow MRR and have higher ROAS without more Ad Spend",
-  primaryCta: { label: "Book a Demo Call", href: "/demo" },
-  secondaryCta: { label: "Start Recovering Lost Revenue", href: "/demo" },
+    "We Turn Abandoned Checkouts into Orders and Increase Subscriptions with Blujet AI Recovery System so you can grow MRR and have higher ROAS without more Ad Spend",
+  primaryCta: { label: "Book a Demo Call", href: "#pilot-widget" },
+  secondaryCta: { label: "Book a Free Trial Call", href: "#pilot-widget" },
 }
 
 export const features = [

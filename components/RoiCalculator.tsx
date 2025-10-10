@@ -263,7 +263,7 @@ export default function RoiCalculator() {
               <div className="text-right font-semibold">{fmtMoney(additionalRevenue)}</div>
             </div>
 
-            <a href="/demo">
+            <a href="#pilot-widget">
               <Button
                 variant="default"
                 className="mt-4 w-full shadow-none"

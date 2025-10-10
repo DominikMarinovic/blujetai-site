@@ -22,7 +22,7 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <a href="/demo">
+            <a href="#pilot-widget">
               <Button className="mt-6 w-full" aria-label={`Select ${tier.name}`}>
                 Get Started
               </Button>

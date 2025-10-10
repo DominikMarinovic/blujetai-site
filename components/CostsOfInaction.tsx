@@ -45,25 +45,24 @@ export default function CostsOfInaction() {
     (chart.width - chart.left * 2 - chart.gap * (churnByDay.length - 1)) / churnByDay.length
 
   return (
-    <section id="costs" className="container bg-white py-16 sm:py-24">
+    <section id="costs" className="container  bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-sm font-semibold pb-2 uppercase text-red-600">The Problem</p>
-        <h2 className="font-heading text-3xl font-bold sm:text-4xl">
+        <h2 className="font-heading text-3xl font-semibold sm:text-4xl">
           The Real Cost of Checkout & Subscription Leaks
         </h2>
-        <p className="mt-3 text-muted-foreground">
-          Abandoned checkouts, 1st renewal cancellations and failed rebills bleed profit every day.
-        </p>
+        <p className="mt-3 text-muted-foreground">These problems affect your ROAS directly</p>
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
-        {/* Card 1: Reputation & Support Load */}
         <Card
-          title="A Hole That's Bleeding You Money Right Now"
+          title="Wasted Ad Spend"
           desc={
             <>
-              There is nothing more frustrating than this -{" "}
-              <strong>Seeing your revenue slip out of your hand</strong>
+              You're pouring tens or hundreds of thousands of dollars a month into Meta, Google, and
+              TikTok to acquire new subscribers. But with 70-80% of them abandoning the checkout,
+              you're forced to watch your ad budget evaporate at the final, most critical step.
+              <strong>This is a direct hit to your ROAS!</strong>
             </>
           }
         >
@@ -93,12 +92,11 @@ export default function CostsOfInaction() {
 
         {/* Card 2: Stolen/Lost Revenue */}
         <Card
-          title="Losing MRR = No Cashflow"
+          title="A Leaky MRR Funnel"
           desc={
             <>
-              Your <strong> MRR is a leaky bucket.</strong> You fight to acquire new subscribers,
-              only to lose existing ones to failed payments or simple cancellation. This puts a
-              <strong> hard ceiling</strong> on your growth.
+              You fight to acquire new subscribers, only to lose existing ones to failed payments or
+              simple cancellation. This puts a<strong> hard ceiling</strong> on your growth.
             </>
           }
         >
@@ -132,13 +130,13 @@ export default function CostsOfInaction() {
           </div>
         </Card>
 
-        {/* Card 3: First Renewal Churn */}
         <Card
-          title="First Renewal Churn Spike"
+          title="Flying Blind"
           desc={
             <>
-              New subscribers cancel right before or after the first renewal. Half of that cohort
-              <strong> churns before day 30</strong> and the LTV you paid for disappears.
+              You have all the data—analytics, reports, dashboards. You know how many people are
+              leaving. But you don't have the single most important piece of information:{" "}
+              <strong> Why are they not buying?</strong>{" "}
             </>
           }
         >
@@ -253,10 +251,10 @@ function Card({
   children: React.ReactNode
 }) {
   return (
-    <div className="rounded-2xl border border-[#eaeaeb] bg-white p-5 sm:p-6">
+    <div className="rounded-2xl border border-[#eaeaeb] bg-gradient-to-br from-stone-100 to-white p-5 sm:p-6">
       <div className="mb-4">{children}</div>
       <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="mt-2 text-sm text-muted-foreground">{desc}</p>
+      <p className="mt-2 text-sm text-stone-700">{desc}</p>
     </div>
   )
 }

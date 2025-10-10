@@ -1,29 +1,23 @@
 ﻿import { cn } from "@/lib/utils"
-import { CalendarCheck, CheckCircle2, MessageCircle, PhoneCall } from "lucide-react"
+import { CalendarCheck, CheckCircle2, MessageCircleMore, PhoneCall } from "lucide-react"
 
 const steps = [
   {
-    step: "01",
+    step: "STEP 1",
     title: "Strategy call",
-    desc: "Map current checkout leaks, pick the first revenue win, and align on guardrails.",
+    desc: "Map current checkout leaks, pick the first revenue win, and align on Brand Voice.",
     icon: PhoneCall,
   },
   {
-    step: "02",
-    title: "Connect + configure",
-    desc: "Hook up Shopify, billing, and CRM, then approve scripts, offers, and compliance settings.",
-    icon: CalendarCheck,
+    step: "STEP 2",
+    title: "We build & test",
+    desc: "We build and test your AI recovery system. We will make sure everything is running smoothly before lauching!",
+    icon: MessageCircleMore,
   },
   {
-    step: "03",
-    title: "Slack & alerts live",
-    desc: "Get a shared channel for transcripts, approvals, and rapid tweaks as we deploy playbooks.",
-    icon: MessageCircle,
-  },
-  {
-    step: "04",
-    title: "Revenue dashboard",
-    desc: "Track recovered orders, saved subscriptions, and insights that feed back into your CRO roadmap.",
+    step: "STEP 3",
+    title: "Results",
+    desc: "New money startes coming in and you can see it on your dashboard",
     icon: CheckCircle2,
   },
 ]
@@ -52,23 +46,22 @@ export default function HowWeWork() {
     <section id="how-we-work" className="container bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-4xl text-center">
         <p className="text-sm font-semibold uppercase text-blue-600">Next steps</p>
-        <h2 className="mt-4 font-heading text-3xl font-bold text-stone-800 sm:text-5xl">
-          3 Step Process to Get You more Profit with More Saved Checkouts
+        <h2 className="mt-4 font-heading text-3xl font-semibold text-stone-800 sm:text-4xl">
+          3-Step Process to Get You more Profit
         </h2>
       </div>
 
-      <div className="mt-4 grid gap-1 md:grid-cols-2 xl:grid-cols-4">
+      <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-3 xl:justify-items-center">
         {steps.map(({ step, title, desc, icon: Icon }) => (
           <div
             key={step}
-            className="relative flex h-full flex-col items-center bg-white px-8 py-6 text-center"
+            className="flex h-full max-w-sm flex-col items-center bg-white px-8 py-7 text-center"
           >
-            <div className="inline-flex items-center gap-1 rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-blue-600">
-              <span className="rounded-full bg-white px-1 py-0.5 text-stone-500">{step}</span>
-              <span className="uppercase">Step</span>
+            <div className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+              {step}
             </div>
-            <div className="mt-6 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600">
-              <Icon className="h-5 w-5" />
+            <div className="mt-5 flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-blue-800 via-blue-600 to-blue-400 text-white">
+              <Icon className="h-5 w-5" strokeWidth={1.8} />
             </div>
             <h3 className="mt-6 text-xl font-semibold text-stone-800">{title}</h3>
             <p className="mt-3 text-sm text-stone-600">{desc}</p>

@@ -14,7 +14,7 @@ export default function Hero() {
   const [mounted, setMounted] = useState(false)
   useEffect(() => setMounted(true), [])
   return (
-    <section className="relative pt-4 overflow-hidden">
+    <section className="relative pt-2 overflow-hidden">
       {/* Hero background image – place file at public/hero-fuji.jpg */}
       <div className="bg-white">
         <ParticlesDynamic />
@@ -25,10 +25,10 @@ export default function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{ duration: 0.5 }}
-              className="mb-6 mx-6 flex w-auto justify-center"
+              className=" mx-2 flex w-auto justify-center"
             >
-              <div className="inline-flex items-center justify-center rounded-full px-6 py-2 text-[14px] bg-blue-50 border border-blue-300 border-double font-bold text-stone-600 shadow-sm sm:text-lg">
-                {heroCopy.badge}
+              <div className="inline-flex items-center justify-center px-6 py-2 text-[14px] font-medium text-blue-600 sm:text-lg">
+                The Next Generation of Revenue Retention
               </div>
             </motion.div>
             <motion.h1
@@ -36,17 +36,16 @@ export default function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{ duration: 0.7, delay: 0.05 }}
-              className=" font-heading font-[700] text-[30px] leading-snug mx-2 text-stone-800 sm:text-[52px] sm:leading-tight sm:pt-2 sm:font-bold"
+              className=" font-bold tracking-tight text-[30px] mx-2 text-stone-700 sm:text-[52px] sm:pt-2 sm:font-[700]"
             >
-              The Next Generation of
-              <span className="text-blue-600"> Revenue Recovery & Retention</span>
+              Have Conversations With Your Subscribers
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="mt-5 sm:text-[22px] sm:leading-tight text-[20px] sm:pt-4 font-medium text-stone-600"
+              className="mt-5 sm:text-[22px] sm:leading-tight text-[18px] sm:pt-4 font-medium text-stone-600"
             >
               {heroCopy.subhead}
             </motion.p>
@@ -59,8 +58,8 @@ export default function Hero() {
               className="mt-8 sm:mb-36 flex flex-col items-center justify-center gap-3 sm:flex-row"
             >
               <Link href={heroCopy.secondaryCta.href}>
-                <Button variant="secondary" className="min-w-[360px] min-h-16">
-                  <span className="cta-text-sheen">{heroCopy.secondaryCta.label}</span>
+                <Button variant="secondary" className="min-w-[280px] min-h-16">
+                  <span className="">{heroCopy.secondaryCta.label}</span>
                 </Button>
               </Link>
             </motion.div>
