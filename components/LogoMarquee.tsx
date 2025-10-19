@@ -43,33 +43,41 @@ export function LogoMarquee({ items = [], className, heading }: LogoMarqueeProps
     return null
   }
 
-  const animationDurationSeconds = 40
+  const headingLabel = heading ?? "Our trusted partners"
+  const animationDurationSeconds = 32
 
   return (
     <div aria-hidden="true">
-      <p className="mb-4 sm:mb-5 text-center text-sm font-semibold uppercase text-stone-600 sm:text-[18px] ">
-        Our trusted partners
-      </p>
-      <div className="marquee-track" style={{ animationDuration: `${animationDurationSeconds}s` }}>
-        {repeated.map((item, index) => (
-          <span key={`${item.label}-${index}`} className="marquee-item">
-            {item.src ? (
-              <span className="relative flex h-6 items-center sm:h-8">
-                <Image
-                  src={item.src}
-                  alt={item.label}
-                  width={140}
-                  height={36}
-                  className="h-16 w-auto object-contain"
-                  draggable={false}
-                  sizes="(min-width: 1024px) 140px, (min-width: 640px) 120px, 96px"
-                />
-              </span>
-            ) : (
-              item.label
-            )}
-          </span>
-        ))}
+      {headingLabel ? (
+        <p className="mb-4 text-center text-sm font-semibold uppercase text-stone-600 sm:mb-5 sm:text-[18px]">
+          {headingLabel}
+        </p>
+      ) : null}
+      <div className={cn("marquee-container", className)}>
+        <div
+          className="marquee-track"
+          style={{ animationDuration: `${animationDurationSeconds}s` }}
+        >
+          {repeated.map((item, index) => (
+            <span key={`${item.label}-${index}`} className="marquee-item">
+              {item.src ? (
+                <span className="relative flex h-8 items-center sm:h-10 lg:h-12">
+                  <Image
+                    src={item.src}
+                    alt={item.label}
+                    width={160}
+                    height={48}
+                    className="h-full w-auto object-contain"
+                    draggable={false}
+                    sizes="(min-width: 1024px) 160px, (min-width: 640px) 120px, 96px"
+                  />
+                </span>
+              ) : (
+                item.label
+              )}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   )

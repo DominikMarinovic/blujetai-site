@@ -11,9 +11,9 @@ import { LogoMarquee } from "@/components/LogoMarquee"
 
 const HERO_LOGOS = [
   { label: "Skio", src: "/skio.png" },
-  { label: "Shopify", src: "/shopify.png" },
+  { label: "Shopify", src: "/Shopify.png" },
   { label: "Stay AI", src: "/stay ai.png" },
-  { label: "Bold", src: "/bold.png" },
+  { label: "Bold", src: "/Bold.png" },
   { label: "Shopify Plus", src: "/shopify plus.png" },
   { label: "Loop", src: "/loop.png" },
   { label: "Recharge", src: "/recharge.png" },
@@ -35,3 +35,4 @@ export default function Page() {
     </>
   )
 }
+

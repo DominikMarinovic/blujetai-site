@@ -12,9 +12,9 @@ import { site } from "@/content/site"
 
 const TRUST_BADGES = [
   { label: "Shopify Plus", src: "/shopify plus.png" },
-  { label: "Shopify", src: "/shopify.png" },
+  { label: "Shopify", src: "/Shopify.png" },
   { label: "Recharge", src: "/recharge.png" },
-  { label: "Bold", src: "/bold.png" },
+  { label: "Bold", src: "/Bold.png" },
   { label: "Loop", src: "/loop.png" },
   { label: "Skio", src: "/skio.png" },
   { label: "Stay AI", src: "/stay ai.png" },
@@ -194,3 +194,4 @@ export default function BookedCallPage() {
     </div>
   )
 }
+
