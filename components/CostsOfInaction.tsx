@@ -1,98 +1,96 @@
-﻿import { cn } from "@/lib/utils"
+﻿"use client"
+
+import Image from "next/image"
+import { cn } from "@/lib/utils"
 
 const churnByDay = [
-  { day: 1, value: 110 },
-  { day: 2, value: 40 },
-  { day: 3, value: 25 },
-  { day: 4, value: 24 },
-  { day: 5, value: 24 },
-  { day: 6, value: 20 },
-  { day: 7, value: 32 },
-  { day: 8, value: 32 },
-  { day: 9, value: 23 },
-  { day: 10, value: 27 },
-  { day: 11, value: 30 },
-  { day: 12, value: 35 },
-  { day: 13, value: 26 },
-  { day: 14, value: 29 },
+  { day: 1, value: 45 },
+  { day: 2, value: 15 },
+  { day: 3, value: 9 },
+  { day: 4, value: 14 },
+  { day: 5, value: 14 },
+  { day: 6, value: 10 },
+  { day: 7, value: 12 },
+  { day: 8, value: 12 },
+  { day: 9, value: 13 },
+  { day: 10, value: 17 },
+  { day: 11, value: 10 },
+  { day: 12, value: 15 },
+  { day: 13, value: 16 },
+  { day: 14, value: 19 },
   { day: 15, value: 15 },
-  { day: 16, value: 20 },
-  { day: 17, value: 29 },
-  { day: 18, value: 32 },
-  { day: 19, value: 23 },
-  { day: 20, value: 21 },
-  { day: 21, value: 22 },
-  { day: 22, value: 29 },
-  { day: 23, value: 32 },
-  { day: 24, value: 23 },
-  { day: 25, value: 43 },
-  { day: 26, value: 31 },
+  { day: 16, value: 10 },
+  { day: 17, value: 14 },
+  { day: 18, value: 12 },
+  { day: 19, value: 13 },
+  { day: 20, value: 11 },
+  { day: 21, value: 12 },
+  { day: 22, value: 17 },
+  { day: 23, value: 12 },
+  { day: 24, value: 13 },
+  { day: 25, value: 16 },
+  { day: 26, value: 21 },
   { day: 27, value: 26 },
-  { day: 28, value: 33 },
-  { day: 29, value: 42 },
-  { day: 30, value: 89 },
-  { day: 31, value: 46 },
-  { day: 32, value: 23 },
-  { day: 33, value: 16 },
-  { day: 34, value: 10 },
-  { day: 35, value: 6 },
+  { day: 28, value: 110 },
+  { day: 29, value: 32 },
+  { day: 30, value: 33 },
+  { day: 31, value: 40 },
+  { day: 32, value: 156 },
+  { day: 33, value: 55 },
+  { day: 34, value: 50 },
+  { day: 35, value: 36 },
+  { day: 36, value: 20 },
+  { day: 37, value: 16 },
+  { day: 38, value: 10 },
+  { day: 39, value: 10 },
+  { day: 40, value: 16 },
 ]
 
 export default function CostsOfInaction() {
-  const chart = { width: 360, height: 160, top: 28, bottom: 40, left: 28, gap: 6 }
+  const chart = { width: 360, height: 160, top: 28, bottom: 40, left: 28, gap: 2 }
   const maxValue = Math.max(...churnByDay.map((d) => d.value))
   const barWidth =
     (chart.width - chart.left * 2 - chart.gap * (churnByDay.length - 1)) / churnByDay.length
 
   return (
-    <section id="costs" className="container  bg-white py-16 sm:py-24">
-      <div className="mx-auto max-w-3xl text-center">
-        <p className="text-sm font-semibold pb-2 uppercase text-red-600">The Problem</p>
-        <h2 className="font-heading text-3xl font-semibold sm:text-4xl">
-          The Real Cost of Checkout & Subscription Leaks
+    <section id="costs" className=" container bg-white py-16 sm:py-20">
+      <div className="mx-auto max-w-4xl sm:mb-12 text-center">
+        <p className="inline-block bg-gradient-to-br from-blue-600 via-blue-400 to-blue-300 bg-clip-text pb-2 text-sm font-semibold uppercase text-transparent">
+          The problem
+        </p>
+        <h2 className="mt-3 font-heading text-3xl capitalize font-semibold text-stone-900 sm:text-4xl">
+          The Real Cost of Revenue Leak
         </h2>
-        <p className="mt-3 text-muted-foreground">These problems affect your ROAS directly</p>
+        <p className="mt-3 text-muted-foreground"></p>
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
         <Card
-          title="Wasted Ad Spend"
+          title="Abandoned Checkout = Wasted Ad Spend"
           desc={
             <>
-              You're pouring tens or hundreds of thousands of dollars a month into Meta, Google, and
-              TikTok to acquire new subscribers. But with 70-80% of them abandoning the checkout,
-              you're forced to watch your ad budget evaporate at the final, most critical step.
-              <strong>This is a direct hit to your ROAS!</strong>
+              You&apos;re pouring tens or hundreds of thousands of dollars a month into Ads to
+              acquire new subscribers. But you&apos;re forced to watch your{" "}
+              <strong>ad budget evaporate</strong> at the final step.
             </>
           }
         >
           <div className="space-y-3">
-            <div className="rounded-xl border border-[#E5E7EB] bg-white p-3 shadow-sm">
-              <div className="flex items-center gap-2 pb-2 text-sm font-semibold">
-                <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-stone-200">
-                  $
-                </span>
-                <span className="text-lg font-semibold text-stone-800">Lost Sale</span>
-              </div>
-              <p className="mt-1 text-sm text-stone-600">Health Supplement</p>
-              <p className="mt-1 text-sm text-red-600">-$49.99</p>
-            </div>
-            <div className="rounded-xl border border-[#E5E7EB] bg-white p-4 shadow-sm">
-              <div className="flex items-center gap-2 pb-2 text-sm font-semibold">
-                <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-stone-200">
-                  ↺
-                </span>
-                <span className="text-lg font-semibold text-stone-800">Canceled Subscription</span>
-              </div>
-              <p className="mt-1 text-sm text-stone-600">Probiotic for Pets</p>
-              <p className="mt-1 text-sm text-red-600">-$29.99/month</p>
+            <div className="relative overflow-hidden rounded-2xl bg-stone-50 p-2">
+              <Image
+                src="/wasted-ad-spend.png"
+                alt="Wasted ad spend leads to lower Roas"
+                width={560}
+                height={320}
+                className="h-60 w-full rounded-xl object-cover"
+                priority
+              />
             </div>
           </div>
         </Card>
 
-        {/* Card 2: Stolen/Lost Revenue */}
         <Card
-          title="A Leaky MRR Funnel"
+          title="The Hard Ceiling on Your Growth"
           desc={
             <>
               You fight to acquire new subscribers, only to lose existing ones to failed payments or
@@ -100,15 +98,14 @@ export default function CostsOfInaction() {
             </>
           }
         >
-          <div className="rounded-xl border border-[#E5E7EB] bg-white pt-6 shadow-sm">
+          <div className="rounded-xl bg-stone-50 pt-6 ">
             <div className="text-center">
-              <div className="text-xs uppercase tracking-wide text-stone-500">MRR</div>
               <div className="mt-1 text-2xl font-bold">$MRR</div>
               <span className="mt-1 inline-block rounded-full bg-red-50 px-2 py-0.5 text-xs font-semibold text-red-600">
                 - $32,440
               </span>
             </div>
-            <svg viewBox="0 0 320 110" className="mt-6 w-full">
+            <svg viewBox="0 0 320 110" className="mt-6 h-36 w-full">
               <defs>
                 <linearGradient id="loss" x1="0" x2="0" y1="0" y2="1">
                   <stop offset="0%" stopColor="#fecaca" />
@@ -125,30 +122,31 @@ export default function CostsOfInaction() {
               <path
                 d="M0,110 L0,18 C15,12 35,20 55,18 C75,22 95,26 115,28 C135,32 155,38 175,42 C195,48 215,56 235,66 C250,75 270,85 285,90 C300,88 310,82 320,80 L320,110 Z"
                 fill="url(#loss)"
+                opacity={0.35}
               />
             </svg>
           </div>
         </Card>
 
         <Card
-          title="Flying Blind"
+          title="First Renewal Churn Spike"
           desc={
             <>
-              You have all the data—analytics, reports, dashboards. You know how many people are
-              leaving. But you don't have the single most important piece of information:{" "}
-              <strong> Why are they not buying?</strong>{" "}
+              New subscribers cancel right before or after their first renewal. Nearly half of your
+              cohort <strong>vanishes before Day 30 </strong>and the LTV you paid so much to acquire
+              disappears with them.
             </>
           }
         >
           <div className="space-y-4">
-            <div className="rounded-xl border border-[#E5E7EB] bg-white p-4 shadow-sm">
+            <div className="rounded-xl bg-stone-50 p-3">
               <div className="flex items-center justify-between text-xs font-semibold uppercase text-stone-500">
                 <span>Subscription cohort</span>
-                <span className="rounded-full bg-red-50 px-2 py-0.5 text-[11px] font-semibold text-red-600">
+                <span className="rounded-full bg-stone-50 px-2 py-0.5 text-[11px] font-semibold text-stone-600">
                   -52% at day 30
                 </span>
               </div>
-              <svg viewBox={`0 0 ${chart.width} ${chart.height}`} className="mt-4 w-full">
+              <svg viewBox={`0 0 ${chart.width} ${chart.height}`} className="mt-2 h-48 w-full">
                 <defs>
                   <linearGradient id="barFill" x1="0" x2="0" y1="0" y2="1">
                     <stop offset="0%" stopColor="#93c5fd" />
@@ -251,10 +249,10 @@ function Card({
   children: React.ReactNode
 }) {
   return (
-    <div className="rounded-2xl border border-[#eaeaeb] bg-gradient-to-br from-stone-100 to-white p-5 sm:p-6">
+    <div className="rounded-3xl bg-stone-50 shadow border-stone-300 p-5 sm:p-6">
       <div className="mb-4">{children}</div>
-      <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="mt-2 text-sm text-stone-700">{desc}</p>
+      <h3 className="text-lg font-semibold text-stone-800">{title}</h3>
+      <p className="mt-2 text-sm text-stone-600">{desc}</p>
     </div>
   )
 }

@@ -10,9 +10,9 @@ import { Button } from "@/components/ui/button"
 export default function Navbar() {
   // Solid navbar with responsive spacing for mobile and desktop
   return (
-    <header className="bg-white backdrop-blur-sm pt-2">
+    <header className=" bg-white pt-2">
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center gap-2 justify-center sm:h-20">
+        <div className="flex h-12 items-center justify-center sm:h-16">
           <Link href="/" className="flex items-center" aria-label="Blujet AI home">
             {/* Logo and brand name */}
             <Image
@@ -20,11 +20,11 @@ export default function Navbar() {
               alt="Blujet AI logo"
               width={96}
               height={70}
-              className="h-6 w-auto sm:h-10"
+              className="h-6 w-auto sm:h-8"
               priority
             />
-            <span className="rounded-xl py-4 pl-1 text-lg font-bold text-stone-800 sm:text-xl">
-              BlujetAI
+            <span className="rounded-xl py-4 text-lg font-bold text-stone-800 sm:text-xl">
+              Blujet
             </span>
           </Link>
           {/* Right: CTA button 

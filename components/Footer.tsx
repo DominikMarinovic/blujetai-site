@@ -9,7 +9,6 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div>
             <div className="flex items-center gap-2">
-              <div className="h-7 w-7 rounded-xl bg-[#a6bee3]" />
               <span className="font-heading text-white text-lg">Blujet AI</span>
             </div>
             <p className="mt-3 text-sm text-stone-200 max-w-xs">

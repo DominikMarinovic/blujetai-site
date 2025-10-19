@@ -1,28 +1,36 @@
 import Hero from "@/components/Hero"
-import FeatureGrid from "@/components/FeatureGrid"
 import CostsOfInaction from "@/components/CostsOfInaction"
 import AiRecoveryFlow from "@/components/AiRecoveryFlow"
 import CaseStudies from "@/components/CaseStudies"
 import OldPlaybook from "@/components/OldPlaybook"
-import BeforeAfter from "@/components/BeforeAfter"
-import RoiCalculator from "@/components/RoiCalculator"
-import Faq from "@/components/Faq"
-import StatsStrip from "@/components/StatsStrip"
-import BetterThanSMS from "@/components/BetterThanSMS"
-import ProfitInfographic from "@/components/ProfitInfographic"
 import HowWeWork from "@/components/HowWeWork"
-import VoiceAgentShowcase from "@/components/VoiceAgentShowcase"
+import StatsStrip from "@/components/StatsStrip"
+import WhoThisIsFor from "@/components/WhoThisIsFor"
+import Faq from "@/components/Faq"
+import { LogoMarquee } from "@/components/LogoMarquee"
+
+const HERO_LOGOS = [
+  { label: "Skio", src: "/skio.png" },
+  { label: "Shopify", src: "/shopify.png" },
+  { label: "Stay AI", src: "/stay ai.png" },
+  { label: "Bold", src: "/bold.png" },
+  { label: "Shopify Plus", src: "/shopify plus.png" },
+  { label: "Loop", src: "/loop.png" },
+  { label: "Recharge", src: "/recharge.png" },
+]
 
 export default function Page() {
   return (
     <>
       <Hero />
+      <LogoMarquee heading="Our trusted Partner" items={HERO_LOGOS} />
       <CostsOfInaction />
       <OldPlaybook />
       <AiRecoveryFlow />
       <HowWeWork />
       <CaseStudies />
       <StatsStrip />
+      <WhoThisIsFor />
       <Faq />
     </>
   )

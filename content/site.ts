@@ -43,9 +43,9 @@ export const heroCopy = {
   badge: "For Brands Doing over 100k/month",
   headline: "Recover +10–20% more revenue from the same traffic with AI Voice + SMS.",
   subhead:
-    "We Turn Abandoned Checkouts into Orders and Increase Subscriptions with Blujet AI Recovery System so you can grow MRR and have higher ROAS without more Ad Spend",
-  primaryCta: { label: "Book a Demo Call", href: "#pilot-widget" },
-  secondaryCta: { label: "Book a Free Trial Call", href: "#pilot-widget" },
+    "We deploy done-for-you AI agents that intervene at the two most critical <>moments: abandoned checkouts and at-risk renewals. Our human-like conversations recapture lost sales and reduce churn, delivering profitable growth from your existing traffic.",
+  primaryCta: { label: "See The System In Action", href: "#pilot-widget" },
+  secondaryCta: { label: "See The System In Action", href: "#pilot-widget" },
 }
 
 export const features = [

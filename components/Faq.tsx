@@ -13,13 +13,13 @@ export default function Faq() {
     <>
       <section className="relative bg-white overflow-hidden">
         <div id="pilot-widget" className="container py-24 text-center sm:py-32">
-          <h2 className="font-heading text-3xl font-bold text-stone-800 sm:text-4xl md:text-5xl">
-            Have Conversations with Customers!
+          <h2 className="font-heading text-3xl font-semibold text-stone-800 sm:mx-56 sm:text-4xl">
+            Ready to Unlock Stable MRR from Your Existing Traffic?
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-sm text-stone-600">
-            Book an audit call here where we'll go over your current recovery funnel, improvements
-            that can be made, and what implementing the agentic recovery model would look like for
-            your Brand!
+          <p className="mx-auto mt-6 max-w-2xl text-sm text-stone-600">
+            Book a free, no-obligation audit call. We'll analyze your current funnel, identify your
+            most significant revenue leaks, and map out what implementing the AI Intervention Engine
+            would look like for your brand.
           </p>
           <div>
             <div

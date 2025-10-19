@@ -10,7 +10,17 @@ import {
 } from "@/components/ui/accordion"
 import { site } from "@/content/site"
 
-const TRUST_BADGES = ["Shopify Plus Brands", "Recharge", "Klaviyo", "Loop", "Tapcart", "Skio"]
+const TRUST_BADGES = [
+  { label: "Shopify Plus", src: "/shopify plus.png" },
+  { label: "Shopify", src: "/shopify.png" },
+  { label: "Recharge", src: "/recharge.png" },
+  { label: "Bold", src: "/bold.png" },
+  { label: "Loop", src: "/loop.png" },
+  { label: "Skio", src: "/skio.png" },
+  { label: "Stay AI", src: "/stay ai.png" },
+  { label: "Tapcart" },
+  { label: "Klaviyo" },
+]
 
 const STEP_VIDEOS: Record<"step1" | "step2", string> = {
   step1: "",
@@ -138,7 +148,7 @@ export default function BookedCallPage() {
           </div>
 
           <div className="mt-10">
-            <LogoMarquee items={TRUST_BADGES} className="rounded-2x px-6 py-4" />
+            <LogoMarquee heading="Our trusted Partner" items={TRUST_BADGES} className="rounded-2x px-6 py-4" />
           </div>
         </div>
       </section>
