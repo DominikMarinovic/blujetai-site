@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import PromoBanner from "@/components/PromoBanner"
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const dm = DM_Sans({ subsets: ["latin"], variable: "--font-dmsans" })
@@ -84,6 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <IClosedWidget />
         <PilotScrollManager />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
