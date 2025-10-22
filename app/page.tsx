@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <LogoMarquee heading="Our trusted Partner" items={HERO_LOGOS} />
+      <LogoMarquee heading="Our trusted Partners" items={HERO_LOGOS} />
       <CostsOfInaction />
       <OldPlaybook />
       <AiRecoveryFlow />
@@ -35,4 +35,3 @@ export default function Page() {
     </>
   )
 }
-

@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@id": `${site.url}/#organization`,
               name: "Blujet AI",
               url: site.url,
-              logo: `${site.url}/og.svg`,
+              logo: `${site.url}/logo.png`,
               sameAs: [site.socials.x, site.socials.linkedin, site.socials.github],
             }),
           }}
@@ -59,10 +59,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Product",
-              name: "Blujet AI Voice Agent for Ecommerc Brands",
+              name: "Blujet AI Voice Agent for Ecommerce Brands",
               description: site.description,
               brand: { "@type": "Brand", name: "Blujet AI" },
-              image: [`${site.url}/og.svg`],
+              image: [`${site.url}/log.png`],
             }),
           }}
         />

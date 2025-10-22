@@ -127,7 +127,7 @@ export default function BookedCallPage() {
             Call booked! Follow the steps below
           </h2>
 
-          <div className="mx-auto mt-2 flex max-w-5xl flex-col items-center gap-4 lg:mt-8 lg:flex-row lg:items-start">
+          <div className="mx-auto mt-2 flex max-w-5xl flex-col items-center gap-4 sm:mt-8">
             <div className="w-full lg:max-w-md">
               <StepHeader
                 step="Step 1"
@@ -138,17 +138,13 @@ export default function BookedCallPage() {
               <VideoEmbed
                 title="Blujet AI call confirmation video"
                 vidalytics={{
-                  embedId: "vidalytics_embed_7qfPxmpGUE3dderb",
-                  scriptUrl: "https://fast.vidalytics.com/embeds/JqUaIjL4/7qfPxmpGUE3dderb/",
+                  embedId: "vidalytics_embed_dJJXAWovjubjzlKH",
+                  scriptUrl: "https://fast.vidalytics.com/embeds/JqUaIjL4/dJJXAWovjubjzlKH/",
                   aspectRatio: "100%",
                 }}
-                className="mt-0 max-w-[320px] sm:max-w-[420px] mx-auto lg:mx-0"
+                className="max-w-[320px] sm:max-w-[720px] mx-auto"
               />
             </div>
-          </div>
-
-          <div className="mt-10">
-            <LogoMarquee heading="Our trusted Partner" items={TRUST_BADGES} className="rounded-2x px-6 py-4" />
           </div>
         </div>
       </section>
@@ -194,4 +190,3 @@ export default function BookedCallPage() {
     </div>
   )
 }
-
