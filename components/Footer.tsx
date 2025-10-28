@@ -16,28 +16,12 @@ export default function Footer() {
               spend.
             </p>
           </div>
-          <div>
-            <h4 className="text-sm text-stone-200 font-semibold">Product</h4>
-            <ul className="mt-3 space-y-2 text-sm text-stone-300">
-              <li>
-                <a href="#features">Features</a>
-              </li>
-              <li>
-                <a href="#how">How It Works</a>
-              </li>
-              <li>
-                <a href="#roi">ROI</a>
-              </li>
-            </ul>
-          </div>
+
           <div>
             <h4 className="text-sm text-stone-200 font-semibold">Legal</h4>
             <ul className="mt-3 space-y-2 text-sm text-stone-300">
               <li>
-                <Link href="/privacy">Privacy</Link>
-              </li>
-              <li>
-                <Link href="/terms">Terms</Link>
+                <Link href="/privacy">Privacy Policy</Link>
               </li>
             </ul>
           </div>

@@ -17,9 +17,9 @@ export default function Faq() {
             Ready to Unlock Stable MRR from Your Existing Traffic?
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-sm text-stone-600">
-            Book a free, no-obligation audit call. We'll analyze your current funnel, identify your
-            most significant revenue leaks, and map out what implementing the AI Intervention Engine
-            would look like for your brand.
+            Book a free Revenue Leak Audit call. We'll analyze your current funnel, pinpoint your
+            most significant profit drains, and show you exactly what implementing the AI
+            Intervention Engine could achieve for your brand.
           </p>
           <div>
             <div

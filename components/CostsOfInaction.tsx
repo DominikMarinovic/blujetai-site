@@ -59,9 +59,13 @@ export default function CostsOfInaction() {
           The problem
         </p>
         <h2 className="mt-3 font-heading text-3xl capitalize font-semibold text-stone-900 sm:text-4xl">
-          The Real Cost of Revenue Leak
+          The High Cost of Scaling a Leaky Funnel
         </h2>
-        <p className="mt-3 text-muted-foreground"></p>
+        <p className="mt-3 text-muted-foreground">
+          You know the subscription model promises predictable revenue. But right now, you're
+          battling leaks that make growth feel like an uphill fight, forcing you to spend more and
+          more money on ads just to stay afloat.
+        </p>
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -69,8 +73,8 @@ export default function CostsOfInaction() {
           title="Abandoned Checkout = Wasted Ad Spend"
           desc={
             <>
-              You&apos;re pouring tens or hundreds of thousands of dollars a month into Ads to
-              acquire new subscribers. But you&apos;re forced to watch your{" "}
+              You&apos;re spending tens or hundreds of thousands of dollars a month on ads to
+              acquire new subscribers. <br /> <br /> But you&apos;re forced to watch your{" "}
               <strong>ad budget evaporate</strong> at the final step.
             </>
           }
@@ -90,11 +94,13 @@ export default function CostsOfInaction() {
         </Card>
 
         <Card
-          title="The Hard Ceiling on Your Growth"
+          title="Uphill batle for Growth"
           desc={
             <>
               You fight to acquire new subscribers, only to lose existing ones to failed payments or
-              simple cancellation. This puts a<strong> hard ceiling</strong> on your growth.
+              simple cancellation. <br />
+              <br />
+              This puts a<strong> hard ceiling</strong> on your growth.
             </>
           }
         >
@@ -129,12 +135,13 @@ export default function CostsOfInaction() {
         </Card>
 
         <Card
-          title="First Renewal Churn Spike"
+          title="The First Renewal Cliff"
           desc={
             <>
-              New subscribers cancel right before or after their first renewal. Nearly half of your
-              cohort <strong>vanishes before Day 30 </strong>and the LTV you paid so much to acquire
-              disappears with them.
+              That spike in cancellations right before or after the first renewal? <br />
+              <br />
+              It's where nearly half your cohort vanishes, taking the LTV you paid to acquire them
+              right along with them. Relying solely on acquisition to outpace this is unsustainable.
             </>
           }
         >

@@ -12,19 +12,19 @@ const steps = [
   {
     step: "STEP 1",
     title: "Strategy call",
-    desc: "Map current checkout leaks, pick the first revenue win, and align on Brand Voice.",
+    desc: "Book a free audit. We'll map your current revenue leaks, identify the highest-impact area for intervention, and align on cloning your Brand Voice.",
     icon: CalendarCheck2,
   },
   {
     step: "STEP 2",
     title: "We build & test",
-    desc: "We build custom AI Voice & text agents and make sure everything is running smoothly before launching!",
+    desc: "Our team builds your custom AI Voice & SMS agents based on the strategy call. We rigorously test everything behind the scenes to ensure seamless performance before launch.",
     icon: FlaskConical,
   },
   {
     step: "STEP 3",
     title: "Results & Optimization",
-    desc: "You see your ROAS go up and we make sure your subscribers have better expirence than previous one",
+    desc: "Your AI Intervention Engine goes live. You'll see abandoned checkouts recovered and churn reduced, directly impacting your ROAS and MRR stability.",
     icon: CheckCircle2,
   },
 ]

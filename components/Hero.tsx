@@ -37,8 +37,10 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.05 }}
               className=" font-semibold tracking-tight sm:leading-tight text-3xl text-stone-800 sm:text-5xl sm:pt-2 "
             >
-              Stop Losing Subscribers with Proactive Voice & SMS Conversations That Email Can't
-              Handle
+              Stop Bleeding MRR: Fix Subscriber Churn & Abandoned Checkouts with Conversations Email
+              Can't Handle{" "}
+              {/*Stop Losing Subscribers with Proactive Voice & SMS Conversations That Email Can't
+              Handle*/}
             </motion.h1>
 
             <motion.p
@@ -48,9 +50,9 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="mt-3 sm:mx-20 sm:text-xl text-md sm:pt-4 sm:leading-snug font-medium text-stone-900"
             >
-              We deploy done-for-you AI agents that have{" "}
-              <span className=" text-[#2D68E9] font-semibold">human-like conversations</span> your
-              email flows can't, turning abandoned checkouts and subscriber churn into profit
+              We'll Add $30k-$100k to your MRR with Our Done-For-You AI Intervention Engine that
+              uses <span className=" text-[#2D68E9] font-semibold">human-like conversations</span>{" "}
+              without spending a cent on ads or messing with your pages
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 16 }}

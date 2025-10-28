@@ -43,6 +43,11 @@ export default function AiRecoveryFlow() {
         <h2 className="mt-3 font-heading text-3xl capitalize font-semibold text-stone-900 sm:text-4xl">
           The AI Intervention Engine: A System, Not Just a Tool.
         </h2>
+        <p className="mt-4 text-base text-stone-600 sm:text-lg">
+          Instead of just broadcasting reminders, we deploy proactive AI agents trained in your
+          brand voice to intervene at critical moments with human-like conversations. This isn't
+          just another tool; it's a complete done-for-you system.
+        </p>
       </div>
 
       <div className="mt-12 grid gap-6 sm:px-12 md:px-16 md:grid-cols-2 lg:grid-cols-4">
@@ -69,9 +74,6 @@ export default function AiRecoveryFlow() {
           </div>
         ))}
       </div>
-      <p className="mt-20 sm:mx-64 whitespace-pre-line text-lg text-center font-bold text-stone-800 sm:text-2xl sm:mt-40">
-        Emails are passive way of customer engagment. We have conversations with your customers
-      </p>
     </section>
   )
 }

@@ -1,15 +1,15 @@
 const cards = [
   {
-    title: "Automations aren’t conversations",
-    body: "Email flows and SMS drips send reminders, but they don’t actually handle objections in real time. Customers still leave with unanswered questions.",
+    title: "Passive Patchwork",
+    body: "Standard automations send reminders, but they can't actively engage a customer having second thoughts or facing a payment issue in the moment. They react after the leak starts.",
   },
   {
-    title: "One-way communication",
-    body: "Today’s buyers expect back-and-forth. Passive messages, even well-timed ones, can’t match a human-style conversation that adapts on the fly.",
+    title: "Generic Messages, Not Solutions",
+    body: "Automated flows broadcast the same message to everyone. They can't diagnose why a specific customer is churning or abandoning their cart, nor address unique objections..",
   },
   {
-    title: "The playbook everyone runs",
-    body: "If every brand uses the same email/SMS stack, your differentiation disappears. You end up with the same messaging next to your competitor emails",
+    title: "Ignoring the Human Element",
+    body: "Customers leave because of uncertainty, questions, or friction. Static messages can't provide the reassurance or answers a real (or human-like) conversation can.",
   },
 ]
 
@@ -37,20 +37,19 @@ export default function OldPlaybook() {
     <section className="container bg-white py-12 sm:py-24">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-sm font-semibold uppercase text-transparent inline-block bg-gradient-to-r from-blue-600 via-blue-400 to-blue-300 bg-clip-text">
-          The old playbook
+          The broken playbook
         </p>
         <h2 className="mt-3 font-heading text-3xl capitalize font-semibold text-stone-900 sm:text-4xl">
-          The ‘Guru’ Playbook is Broken
+          Stop pouring ad spend into a leaky bucket
         </h2>
         <p className="mt-4 whitespace-pre-line text-base text-stone-600 sm:text-xl sm:mt-8">
-          Problem is not in your ads. It's in the old playbook.
-        </p>
-        <p className="mt-4 whitespace-pre-line text-base text-stone-600 sm:text-xl sm:mt-8">
-          You’ve set up the sophisticated email flows. You’re running the "logical" playbook that
-          every marketing guru preaches.
+          You've driving traffic, acquiring subscribers. Your ad spend climbs, you celebrate new
+          subscriber numbers, but net MRR growth barely moves. Sound familiar?
         </p>
         <p className="mt-4 whitespace-pre-line text-base text-stone-900 font-bold sm:text-xl sm:mt-8">
-          So why are you still losing most of your subscribers at checkout and first rebill?
+          For many 7, 8, and 9-figure subscription brands, the problem isn't traffic. <br /> It's
+          the leaks. You're pouring expensive ad spend into a funnel that's losing valuable revenue
+          at critical points.
         </p>
       </div>
 

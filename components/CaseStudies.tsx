@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export default function CaseStudies() {
   return (
-    <section className="container bg-white pt-16 pb-8">
+    <section className="container bg-white pt-16 pb-8 sm:py-28">
       <div className="mx-auto max-w-2xl text-center">
         <p className="text-sm font-semibold uppercase text-transparent inline-block bg-gradient-to-br from-blue-600 via-blue-400 to-blue-300 bg-clip-text">
           Real outcomes from recent launches

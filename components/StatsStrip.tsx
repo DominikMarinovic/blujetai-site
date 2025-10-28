@@ -20,7 +20,7 @@ const stats: Stat[] = [
 
 export default function StatsStrip() {
   return (
-    <section aria-labelledby="stats-heading" className="container bg-white py-10 sm:py-20">
+    <section aria-labelledby="stats-heading" className="container bg-white py-10 sm:py-28">
       <h2 id="stats-heading" className="sr-only">
         Proof points
       </h2>
