@@ -8,6 +8,7 @@ import PilotScrollManager from "@/components/PilotScrollManager"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import PromoBanner from "@/components/PromoBanner"
+import RB2BLoader from "@/components/RB2BLoader"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -79,6 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
 
+        <RB2BLoader />
         <Navbar />
         <main id="main">{children}</main>
         <Footer />
