@@ -3,7 +3,7 @@
 import { useEffect } from "react"
 import { usePathname } from "next/navigation"
 
-const RB2B_SCRIPT_ID = process.env.NEXT_PUBLIC_RB2B_ID
+const RB2B_SCRIPT_ID = process.env.RB2B_ID
 
 export default function RB2BLoader() {
   const pathname = usePathname()
