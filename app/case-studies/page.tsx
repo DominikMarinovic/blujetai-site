@@ -15,9 +15,7 @@ export default function CaseStudiesPage() {
             {c.summary && (
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{c.summary}</p>
             )}
-            {c.detail && (
-              <p className="mt-2 text-sm text-muted-foreground/90">{c.detail}</p>
-            )}
+            
           </div>
         ))}
       </div>
