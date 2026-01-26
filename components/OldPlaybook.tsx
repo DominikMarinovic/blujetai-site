@@ -34,7 +34,7 @@ const contrast = [
 
 export default function OldPlaybook() {
   return (
-    <section className="container bg-white py-12 sm:py-24">
+    <section id="playbook" className="container bg-white py-12 sm:py-24">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-sm font-semibold uppercase text-transparent inline-block bg-gradient-to-r from-blue-600 via-blue-400 to-blue-300 bg-clip-text">
           The broken playbook

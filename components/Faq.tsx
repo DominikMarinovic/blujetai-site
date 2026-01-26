@@ -13,13 +13,12 @@ export default function Faq() {
     <>
       <section className="relative bg-white overflow-hidden">
         <div id="pilot-widget" className="container py-24 text-center sm:py-32">
-          <h2 className="font-heading text-3xl font-semibold text-stone-800 sm:mx-56 sm:text-4xl">
-            Ready to Unlock Stable MRR from Your Existing Traffic?
+          <h2 className="font-heading text-3xl font-semibold text-stone-800 sm:mx-56 sm:text-5xl">
+            Book a Free Demo with the Founder!
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-sm text-stone-600">
-            Book a free Revenue Leak Audit call. We'll analyze your current funnel, pinpoint your
-            most significant profit drains, and show you exactly what implementing the AI
-            Intervention Engine could achieve for your brand.
+             We'll analyze your current funnel. See what's stoping you from scaling your subscriptions. And how we add 10% to your revenue with an Unfair Advantage
+          
           </p>
           <div>
             <div
@@ -39,7 +38,7 @@ export default function Faq() {
       <section id="faq" className="container bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-stone-800">FAQ</h2>
-          <p className="mt-3 text-stone-600">Answers to common questions</p>
+          <p className="mt-3 font-serif text-2xl italic text-stone-500">Maybe you have some questions</p>
         </div>
         <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-[#E5E7EB] bg-white p-6">
           <Accordion type="single" collapsible>

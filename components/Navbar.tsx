@@ -2,42 +2,65 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { useEffect, useState } from "react"
-import { site } from "@/content/site"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { Button } from "./ui/button"
+import { heroCopy } from "@/content/site"
+
+const navItems = [
+  { label: "The Problem", href: "/#recovery" },
+  { label: "How it works", href: "/#bento" },
+  { label: "Results", href: "/#case-studies" },
+  { label: "Who It's For", href: "/#who-this-is-for" },
+  { label: "FAQ", href: "/#faq" },
+]
 
 export default function Navbar() {
   // Solid navbar with responsive spacing for mobile and desktop
   return (
-    <header className=" bg-white pt-2">
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-12 items-center justify-center sm:h-16">
-          <Link href="/" className="flex items-center" aria-label="Blujet AI home">
-            {/* Logo and brand name */}
-            <Image
-              src="/log.png"
-              alt="Blujet AI logo"
-              width={96}
-              height={70}
-              className="h-6 w-auto sm:h-8"
-              priority
-            />
-            <span className="rounded-xl py-4 text-lg font-bold text-stone-800 sm:text-xl">
-              Blujet
-            </span>
-          </Link>
-          {/* Right: CTA button 
-          <Link href={site.cta.href} className="shrink-0">
-            <Button
-              className="rounded-[8px] bg-white px-5 sm:px-5 py-2 text-sm text-black hover:bg-black-50"
-              aria-label={site.cta.label}
-            >
-              {site.cta.label}
-            </Button>
-          </Link>*/}
+    <header className="max-sm:hidden container items-center bg-white max-w-5xl pt-3 pb-2">
+      <div className=" sm:px-6 lg:px-6">
+        <div className="flex items-center justify-left sm:justify-center sm:px-4 py-1 sm:py-2">
+          <Link href="/">
+       
+             <Image 
+                   src="/logo-round.svg" 
+                   alt="Blujet AI Logo" 
+                   width={36} 
+                   height={36}
+                  className="h-9 w-9 shrink-0 sm:h-10 sm:w-10"
+                   priority 
+              
+                   />
+           </Link>
+           <div className=" sm:hidden mx-auto px-2 ">
+         
+             <div className="flex flex-col items-center text-center">
+          
+               <p className="text-[12px] font-semibold text-stone-500 sm:text-sm leading-snug">
+                 <span className="">
+                   220,000+ conversations handled by AI Agents
+                 </span>
+               </p>
+             </div>
+           </div>
+           
+              <nav
+            className="hidden items-center gap-x-5 gap-y-2 text-sm font-semibold text-stone-500 sm:flex sm:flex-wrap sm:mx-auto sm:justify-end"
+            aria-label="Primary"
+          >
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="transition-colors font-semibold hover:text-stone-900"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>  
         </div>
       </div>
     </header>
   )
 }
+
+

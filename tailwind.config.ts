@@ -13,14 +13,14 @@ const config: Config = {
     extend: {
       colors: {
         background: "#ffffff",
-        foreground: "#0A0A0A",
+        foreground: "#0C2E49",
         primary: {
-          DEFAULT: "#39CAFF",
-          foreground: "#001018",
+          DEFAULT: "#114B7B",
+          foreground: "#0C2E49",
         },
         accent: {
-          DEFAULT: "#F8FAFC",
-          foreground: "#0A0A0A",
+          DEFAULT: "#137fd1",
+          foreground: "#0C2E49",
         },
         muted: {
           DEFAULT: "#F3F4F6",
@@ -35,6 +35,8 @@ const config: Config = {
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
         heading: ["DM Sans", ...fontFamily.sans],
+        pixel: ["var(--font-pixel)", ...fontFamily.mono],
+        serif: ['Playfair Display', 'serif'],
       },
       boxShadow: {
         glow: "0 0 30px rgba(57, 202, 255, 0.25)",

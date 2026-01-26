@@ -12,7 +12,7 @@ const stats: Stat[] = [
     blurb: "Get more revenue from the same amount of existing traffic",
   },
   {
-    stat: "75,000+",
+    stat: "100,000+",
     label: "Calls Made",
     blurb: "We have large amount of calls under our belt",
   },
@@ -20,7 +20,11 @@ const stats: Stat[] = [
 
 export default function StatsStrip() {
   return (
-    <section aria-labelledby="stats-heading" className="container bg-white py-10 sm:py-28">
+    <section
+      id="stats"
+      aria-labelledby="stats-heading"
+      className="container bg-white py-10 sm:py-28"
+    >
       <h2 id="stats-heading" className="sr-only">
         Proof points
       </h2>

@@ -37,7 +37,7 @@ export default function AiRecoveryFlow() {
   return (
     <section id="system" className="container bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-4xl text-center">
-        <p className="text-sm font-semibold uppercase text-transparent inline-block bg-gradient-to-br from-blue-600 via-blue-400 to-blue-300 bg-clip-text">
+        <p className="text-sm font-semibold uppercase text-transparent inline-block bg-gradient-to-br from-[#3298ab]  to-blue-400 bg-clip-text">
           Here is how we fix this
         </p>
         <h2 className="mt-3 font-heading text-3xl capitalize font-semibold text-stone-900 sm:text-4xl">

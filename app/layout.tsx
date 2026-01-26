@@ -1,6 +1,6 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { Inter, DM_Sans } from "next/font/google"
+import { Inter, DM_Sans, Courier_Prime } from "next/font/google"
 // next-seo components removed for App Router compatibility
 import { site } from "@/content/site"
 import { IClosedWidget } from "@/components/IClosedWidget"
@@ -14,21 +14,36 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const dm = DM_Sans({ subsets: ["latin"], variable: "--font-dmsans" })
+const courier = Courier_Prime({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-pixel", // This creates the CSS variable
+})
 
-export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
-  title: "Blujet AI — AI Voice Agent for E-commerce",
-  description: site.description,
-  openGraph: {
-    title: "Blujet AI — AI Voice Agent for E-commerce",
+{/* openGraph: {
+    title: "Blujet AI — AI Agents for Shopify Brands",
     description: site.description,
     images: [{ url: site.ogImage }],
     url: site.url,
     siteName: site.name,
+  }, */}
+
+export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
+  title: "Blujet AI — AI Agents for Shopify Brands",
+  description: site.description,
+  openGraph: {
+    title: "Blujet AI — AI Agents for Shopify Brands",
+    description: site.description,
+    images: [{ url: site.ogImage, width: 1200, height: 630 }],
+    url: site.url,
+    siteName: site.name,
+    type: 'website',
+    locale: 'en_US',
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blujet AI — AI Voice Agent for E-commerce",
+    title: "Blujet AI — AI Agents for Shopify Brands",
     description: site.description,
     images: [site.ogImage],
   },
@@ -36,7 +51,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${dm.variable}`}>
+    <html lang="en" className={`${inter.variable} ${dm.variable} ${courier.variable} `}>
       <head>
         <script
           key="org-jsonld"
@@ -48,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@id": `${site.url}/#organization`,
               name: "Blujet AI",
               url: site.url,
-              logo: `${site.url}/logo.png`,
+              logo: `${site.url}/logo-pixel.svg`,
               sameAs: [site.socials.x, site.socials.linkedin, site.socials.github],
             }),
           }}
@@ -60,7 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Product",
-              name: "Blujet AI Voice Agent for Ecommerce Brands",
+              name: "Blujet AI Agents for Shopify Brands",
               description: site.description,
               brand: { "@type": "Brand", name: "Blujet AI" },
               image: [`${site.url}/log.png`],
@@ -81,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
 
         <RB2BLoader />
-        <Navbar />
+        <Navbar/>
         <main id="main">{children}</main>
         <Footer />
         <IClosedWidget />

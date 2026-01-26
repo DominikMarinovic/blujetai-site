@@ -1,71 +1,82 @@
-import { CheckCircle2, XCircle } from "lucide-react"
+import { Check, X } from "lucide-react"
+import { Button } from "./ui/button"
+import Link from "next/link"
 
 const fitsList = [
-  "Your business is built on MRR, doing $250k - $5M/month in a high-LTV niche like beauty, health & fitness, pet supplies, or high-ticket goods.",
-  "You feel stuck on the 'founder's treadmill'. Rising ad costs and stubborn churn mean you're working harder just to keep growth from flatlining, preventing truly profitable scale.",
-  "You believe the key to sustainable growth isn't just buying more traffic, but maximizing the value and retention of every visitor and subscriber you already fought hard to acquire. You're seeking a strategic lever, not just another marketing channel.",
+  "You're a Shopify brand doing $3M-$80M+ per year",
+  "You operate in Health & Beauty, Home, Pets, Food, or CPG",
+  "You’ve hit a revenue plateau despite strong traffic and spend",
+  "Your CAC keeps rising while LTV refuses to scale",
+  "You want to scale to $20M, $30M, $50M+ without destroying margins",
+  "You’re willing to invest in systems that produce real revenue",
 ]
 
 const notFitsList = [
-  "You're just starting out (under $100k/month). Our system needs a certain volume to deliver its full financial impact. We'd love to talk once you reach that milestone!",
-  "Your primary model is dropshipping or low-margin, single-purchase sales. Our greatest value lies in boosting LTV and retention for brands focused on long-term customer relationships and subscriptions.",
-  "You're looking for another DIY software tool. We are a done-for-you growth partner. We build, manage, and optimize the entire system for you. This is an investment in results, not another software subscription to manage",
+  "You're doing under $3M/year",
+  "You're a dropshipper or info product ",
+  "Your product is fundamentally broken (we fix conversion and retention, not bad products)",
+  "You’re looking for a $99/month DIY tool",
+  "You're not willing to invest 4-5 figures to build your AI sales & support team",
 ]
+
+const dotBackgroundStyle = {
+  backgroundImage: "radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px)",
+  backgroundSize: "16px 16px",
+}
 
 export default function WhoThisIsFor() {
   return (
-    <section className="bg-white py-20 sm:py-28">
-      <div className="container">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="text-sm font-semibold uppercase text-transparent inline-block bg-gradient-to-br from-blue-600 via-blue-400 to-blue-300 bg-clip-text">
-            Who This Is For
-          </p>
-          <h2 className="mt-4 font-heading text-3xl font-semibold text-stone-800 sm:text-4xl">
-            Is the AI Intervention Engine Right for You?
-          </h2>
-          <p className="mt-4 text-base text-stone-600 sm:text-lg">
-            We are specialists. Our system is engineered for a specific type of e-commerce brand at
-            a specific stage of growth. This focus is why we deliver such dramatic results. See if
-            this describes you:
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="rounded-3xl border border-stone-200 bg-stone-50 p-8 shadow">
-            <div className="flex items-center gap">
-              <span className="inline-flex h-12 w-12 items-center justify-center rounded-full text-emerald-600">
-                <CheckCircle2 className="h-6 w-6" />
-              </span>
-              <h3 className="text-lg font-semibold text-stone-900">This is Right For You If...</h3>
+    <section id="who-this-is-for" className="relative overflow-hidden bg-white py-16 sm:py-24">
+      <div aria-hidden="true" className="absolute inset-0 -z-10" style={dotBackgroundStyle} />
+      <div className="container mx-auto max-w-3xl">
+        <div className="mx-auto max-w-4xl grid gap-8 lg:grid-cols-2">
+          <div className=" p-6  sm:p-8">
+            <div className="text-center">
+              <h3 className="font-serif italic text-stone-700 text-3xl">
+                This Is For You If...
+              </h3>
+              <div className="mx-auto mt-1 h-[2px] w-40 rounded-full bg-accent" />
             </div>
-            <ul className="mt-6 space-y-4 text-left text-sm text-stone-700 sm:text-base">
+            <ul className="mt-6 space-y-4 text-left text-md text-stone-700 sm:text-lg">
               {fitsList.map((item) => (
-                <li key={item} className="flex gap-3">
-                  <span className="mt-2 inline-flex h-1.5 w-1.5 flex-none rounded-full bg-emerald-500" />
-                  <span>{item}</span>
+                <li key={item} className="flex items-start gap-2 bg-white px-4 py-3">
+                  <span className="mt-0.5 inline-flex h-7 w-7 items-center justify-center bg-white text-accent">
+                    <Check className="h-6 w-6"  strokeWidth="3"/>
+                  </span>
+                  <span className="font-medium text-stone-700">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="rounded-3xl border border-stone-200 bg-stone-50 p-8 shadow">
-            <div className="flex items-center gap">
-              <span className="inline-flex h-12 w-12 items-center justify-center rounded-full text-rose-600">
-                <XCircle className="h-6 w-6" />
-              </span>
-              <h3 className="text-xl font-semibold text-stone-900">This is Not For You If...</h3>
+          <div className=" p-6 sm:p-8">
+            <div className="text-center">
+              <h3 className="font-serif italic text-stone-700 text-3xl">
+                This Is NOT For You If...
+              </h3>
+              <div className="mx-auto mt-1 h-[2px] w-40 rounded-full bg-rose-600" />
             </div>
-            <ul className="mt-6 space-y-4 text-left text-sm text-stone-700 sm:text-base">
+            <ul className="mt-6 space-y-4 text-left text-md text-stone-700 sm:text-lg">
               {notFitsList.map((item) => (
-                <li key={item} className="flex gap-3">
-                  <span className="mt-2 inline-flex h-1.5 w-1.5 flex-none rounded-full bg-rose-400" />
-                  <span>{item}</span>
+                <li key={item} className="flex items-start gap-3 bg-white px-4 py-3">
+                  <span className="mt-0.5 inline-flex h-7 w-7 items-center justify-center bg-white text-rose-600">
+                    <X className="h-6 w-6"  strokeWidth="3" />
+                  </span>
+                  <span className="font-medium text-stone-800">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
+         
         </div>
-      </div>
+        <div className="mt-12 text-center">
+                    <Link href="#pilot-widget">
+                      <Button className="w-full sm:w-auto">Get Revenue Recovery Plan</Button>
+                    </Link>
+                 </div>
+        </div>
+       
+      
     </section>
   )
 }

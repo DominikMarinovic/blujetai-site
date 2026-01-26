@@ -59,7 +59,7 @@ export default function CostsOfInaction() {
           The problem
         </p>
         <h2 className="mt-3 font-heading text-3xl capitalize font-semibold text-stone-900 sm:text-4xl">
-          The High Cost of Scaling a Leaky Funnel
+          You have traffic. Ads Are not the PROBLEM
         </h2>
         <p className="mt-3 text-muted-foreground">
           You know the subscription model promises predictable revenue. But right now, you're
@@ -70,7 +70,7 @@ export default function CostsOfInaction() {
 
       <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
         <Card
-          title="Abandoned Checkout = Wasted Ad Spend"
+          title="Acquisition That Leaks The Moneyoney"
           desc={
             <>
               You&apos;re spending tens or hundreds of thousands of dollars a month on ads to
@@ -135,7 +135,7 @@ export default function CostsOfInaction() {
         </Card>
 
         <Card
-          title="The First Renewal Cliff"
+          title="Low LTV:CAC Ratio"
           desc={
             <>
               That spike in cancellations right before or after the first renewal? <br />
