@@ -10,16 +10,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-gradient-to-b from-foreground to-accent text-white font-seri font-semibold shadow-[0_8px_16px_rgba(14,104,173,0.5)]",
+        default:
+          "bg-gradient-to-br from-foreground to-slate-900 text-white uppercase font-bold shadow-xs",
         secondary:
-          "bg-gradient-to-b from-[#18535D] to-[#14afcc] rounded-full text-white text-sm sm:text-xl hover:bg-[#18535D] shadow shadow-[#00000]",
+          "bg-gradient-to-b from-[#18535D] to-[#14afcc] rounded-full uppercase text-white text-sm sm:text-xl hover:bg-[#18535D] shadow shadow-[#00000]",
         ghost: "bg-[#EAF9FF] text-black hover:bg-[#EAF9FF]",
       },
       size: {
         sm: "h-9 px-3",
         md: "h-11 px-5",
         lg: "h-14 px-8",
-        xl: "h-14 px-12",
+        xl: "h-16 px-6",
       },
     },
     defaultVariants: {

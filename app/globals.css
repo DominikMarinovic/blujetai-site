@@ -10,6 +10,8 @@
 html,
 body {
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -19,6 +21,21 @@ html {
 body {
   @apply bg-white text-black antialiased;
   background: white;
+}
+
+img,
+video,
+iframe,
+embed,
+object,
+svg,
+wistia-player {
+  max-width: 100%;
+}
+
+wistia-player {
+  display: block;
+  width: 100%;
 }
 
 /* Focus styles */

@@ -20,13 +20,15 @@ const courier = Courier_Prime({
   variable: "--font-pixel", // This creates the CSS variable
 })
 
-{/* openGraph: {
+{
+  /* openGraph: {
     title: "Blujet AI — AI Agents for Shopify Brands",
     description: site.description,
     images: [{ url: site.ogImage }],
     url: site.url,
     siteName: site.name,
-  }, */}
+  }, */
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -38,8 +40,8 @@ export const metadata: Metadata = {
     images: [{ url: site.ogImage, width: 1200, height: 630 }],
     url: site.url,
     siteName: site.name,
-    type: 'website',
-    locale: 'en_US',
+    type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
@@ -90,13 +92,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           async
         ></script>
       </head>
-      <body className="min-h-screen bg-grid-radial text-black">
+      <body className="min-h-screen text-black">
         <a href="#main" className="skip-link">
           Skip to content
         </a>
 
         <RB2BLoader />
-        <Navbar/>
+
         <main id="main">{children}</main>
         <Footer />
         <IClosedWidget />
