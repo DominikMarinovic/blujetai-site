@@ -83,7 +83,7 @@ export default function WhatYouGet() {
 
           <div className="mt-10 items-center text-center">
             <Link href="#book-call">
-              <Button className="mt-8 text-center text-md font-semibold text-stone-100 sm:text-lg">
+              <Button className="mt-8 text-center text-md font-bold text-stone-100 sm:text-xl">
                 Grow My subscriptions
               </Button>
             </Link>

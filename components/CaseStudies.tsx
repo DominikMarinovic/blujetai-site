@@ -69,7 +69,7 @@ export default function CaseStudies() {
             })(window, "https://app.cal.com/embed/embed.js", "init");
             Cal("init", "recovery-plan", { origin: "https://app.cal.com" });
             Cal.ns["recovery-plan"]("inline", {
-              elementOrSelector: "#my-cal-inline-recovery-plan",
+              elementOrSelector: "#book-call",
               config: { "layout": "month_view", "useSlotsViewOnSmallScreen": "true", "theme": "light" },
               calLink: "blujetai/recovery-plan",
             });

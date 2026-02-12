@@ -1,4 +1,3 @@
-import Script from "next/script"
 import {
   Accordion,
   AccordionContent,
@@ -9,48 +8,21 @@ import { site } from "@/content/site"
 
 export default function Faq() {
   return (
-    <>
-      {/*
-      <section className="relative bg-white overflow-hidden">
-        <div id="pilot-widget" className="container py-24 text-center sm:py-32">
-          <h2 className="font-heading text-3xl font-semibold text-stone-800 sm:mx-56 sm:text-5xl">
-            Book a Free Demo with the Founder!
-          </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-sm text-stone-600">
-             We'll analyze your current funnel. See what's stoping you from scaling your subscriptions. And how we add 10% to your revenue with an Unfair Advantage
-          
-          </p>
-          <div>
-            <div
-              className="iclosed-widget mt-10 width: 100%; height: 620px"
-              data-url="https://app.iclosed.io/e/blujetai/blujetai-pilot-program"
-              title="BlujetAI Pilot Program"
-            ></div>
-            <script
-              type="text/javascript"
-              src="https://app.iclosed.io/assets/widget.js"
-              async
-            ></script>
-          </div>
-        </div>
-      </section>*/}
-
-      <section id="faq" className="container bg-white py-16 sm:py-24">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-stone-800">FAQ</h2>
-          <p className="mt-3 text-2xl italic text-stone-500">Answers to your questions</p>
-        </div>
-        <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-[#E5E7EB] bg-white p-6">
-          <Accordion type="single" collapsible>
-            {site.faq.map((f, i) => (
-              <AccordionItem key={i} value={`item-${i}`}>
-                <AccordionTrigger>{f.q}</AccordionTrigger>
-                <AccordionContent>{f.a}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-    </>
+    <section id="faq" className="container bg-white py-16 sm:py-24">
+      <div className="mx-auto max-w-2xl text-center">
+        <h2 className="font-heading font-bold text-3xl sm:text-4xl text-stone-800">FAQ</h2>
+        <p className="mt-3 text-2xl italic text-stone-500">Answers to your questions</p>
+      </div>
+      <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-[#E5E7EB] bg-white p-6">
+        <Accordion type="single" collapsible>
+          {site.faq.map((f, i) => (
+            <AccordionItem key={i} value={`item-${i}`}>
+              <AccordionTrigger>{f.q}</AccordionTrigger>
+              <AccordionContent>{f.a}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
   )
 }

@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { Inter, DM_Sans, Courier_Prime } from "next/font/google"
 // next-seo components removed for App Router compatibility
 import { site } from "@/content/site"
-import { IClosedWidget } from "@/components/IClosedWidget"
 import PilotScrollManager from "@/components/PilotScrollManager"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
@@ -83,13 +82,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
-
-        <script
-          type="text/javascript"
-          src="https://app.iclosed.io/assets/widget.js"
-          data-cta-widget="EyGnQmcqM2Qn"
-          async
-        ></script>
       </head>
       <body className="min-h-screen text-black">
         <a href="#main" className="skip-link">
@@ -100,7 +92,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <main id="main">{children}</main>
         <Footer />
-        <IClosedWidget />
         <PilotScrollManager />
         <Analytics />
         <SpeedInsights />
