@@ -73,6 +73,9 @@ export default function WhyNowSection() {
                 For every $1 they spend, they get 5, 8, even 10 times more back in customer lifetime
                 value.
               </p>
+              <p className=" text-stone-800">
+                And that's exactly what we <span className="font-bold">Do For You!</span>
+              </p>
             </div>
           </div>
 

@@ -1,4 +1,5 @@
 import { caseStudies } from "@/content/site"
+import Image from "next/image"
 import Script from "next/script"
 
 export default function CaseStudies() {
@@ -28,14 +29,31 @@ export default function CaseStudies() {
         ))}
       </div>
       <div className="mx-auto bg-stone-50 border rounded-xl border-slate-200 mt-8 max-w-5xl"></div>
-      <div className="pt-4 sm:pt-24 text-2xl sm:text-3xl mx-auto max-w-2xl text-center space-y-3">
-        <p className=" text-stone-600">
-          This is acutally working right now for other brands like yours.
+      <div className="pt-10 sm:pt-24 text-lg sm:text-2xl mx-auto max-w-2xl text-center space-y-3">
+        <p className=" text-stone-600 font-semibold">
+          Get results like this delivered to your{" "}
+          <span className="bg-[#481449] text-stone-50 sm:px-4 px-2 py-1 rounded-full font-semibold">
+            {" "}
+            Slack
+          </span>{" "}
+          or Email
+        </p>
+        <div className="pt-8 flex justify-center">
+          <Image
+            src="/slack.png"
+            alt="Slack results example"
+            width={687}
+            height={370}
+            className="w-full max-w-xl h-auto  rounded-xl border border-slate-200 shadow-sm"
+          />
+        </div>
+        <p className=" pt-4 text-stone-700 font-medium text-md">
+          Every conversation captured. Every reason tracked. Every dollar attributed.{" "}
         </p>
       </div>
 
-      <div className="pt-4 sm:pt-24 text-2xl sm:text-3xl mx-auto max-w-2xl text-center space-y-3">
-        <h2 className="text-stone-700 font-bold">Book a call here!</h2>
+      <div className="mt-10 pt-4 sm:pt-24 text-2xl sm:text-3xl mx-auto max-w-2xl text-center space-y-3">
+        <h2 className="text-stone-700 font-bold">Book a call → See what you're missing</h2>
       </div>
 
       <div className="mx-auto mt-4 h-[650px] w-full max-w-6xl sm:h-[720px]">
