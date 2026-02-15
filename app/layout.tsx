@@ -18,16 +18,6 @@ const courier = Courier_Prime({
   variable: "--font-pixel", // This creates the CSS variable
 })
 
-{
-  /* openGraph: {
-    title: "Blujet AI — AI Agents for Shopify Brands",
-    description: site.description,
-    images: [{ url: site.ogImage }],
-    url: site.url,
-    siteName: site.name,
-  }, */
-}
-
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: "Blujet AI — AI Agents for Shopify Brands",
@@ -75,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Product",
-              name: "Blujet AI Agents for Shopify Brands",
+              name: "Blujet AI - AI Agents for Shopify Brands",
               description: site.description,
               brand: { "@type": "Brand", name: "Blujet AI" },
               image: [`${site.url}/log.png`],
@@ -84,10 +74,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen text-black">
-        <a href="#main" className="skip-link">
-          Skip to content
-        </a>
-
         <RB2BLoader />
 
         <main id="main">{children}</main>

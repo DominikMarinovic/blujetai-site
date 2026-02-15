@@ -133,6 +133,16 @@ export default function Hero() {
               className="mt-2 flex justify-center items-center gap-1 sm:mx-auto font-semibold sm:text-lg text-[12px] sm:leading-snug text-stone-800"
             >
               <BadgeCheck className="h-4 w-4 text-foreground" strokeWidth={2.1} />
+              Your biggest bottleneck stopping you from scaling
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="mt-2 flex justify-center items-center gap-1 sm:mx-auto font-semibold sm:text-lg text-[12px] sm:leading-snug text-stone-800"
+            >
+              <BadgeCheck className="h-4 w-4 text-foreground" strokeWidth={2.1} />
               The exact amount of money you are missing out every day
             </motion.p>
             <motion.p
@@ -143,17 +153,7 @@ export default function Hero() {
               className="mt-2 flex justify-center items-center gap-1 sm:mx-auto font-semibold sm:text-lg text-[12px] sm:leading-snug text-stone-800"
             >
               <BadgeCheck className="h-4 w-4 text-foreground" strokeWidth={2.1} />
-              Watch a live demo of our agents bringing customers back
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-              className="mt-2 flex justify-center items-center gap-1 sm:mx-auto font-semibold sm:text-lg text-[12px] sm:leading-snug text-stone-800"
-            >
-              <BadgeCheck className="h-4 w-4 text-foreground" strokeWidth={2.1} />
-              See how you can create 1 to 1 expirience for your customers
+              How you can have 1 to 1 conversations work for your Brand
             </motion.p>
           </div>
         </div>

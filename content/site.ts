@@ -73,13 +73,12 @@ export const caseStudies = [
     brand: "Abandonment Recovery",
     title: "$56,000+ in Total Value Recovered in 3 Weeks",
     summary:
-      "Deployed multi-channel (Phone Call & SMS) AI agent that recovered over $50,000 in abandoned checkout revenue for a subscription ecommerce platform.",
+      "Deployed multi-channel (Phone Call & SMS) AI agent that recovered over $56,000 in abandoned checkout revenue for a subscription ecommerce platform.",
   },
   {
     brand: "Outbound Campaign",
-    title: "16% Conversion Rate on 20,000+ Automated Sales Calls",
-    summary:
-      "AI sales representative converted at 16% on over 20,000 automated calls for a 7-figure company that added $170k+/year.",
+    title: "16% Conversion Rate Resulted in 6-figures Added to a Yearly Revenue",
+    summary: "AI sales representative converted at 16% of 60,000 calls and added $170k+/year.",
   },
   {
     brand: "Organic Supplement Brand",
