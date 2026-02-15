@@ -77,8 +77,9 @@ export const caseStudies = [
   },
   {
     brand: "Outbound Campaign",
-    title: "16% Conversion Rate Resulted in 6-figures Added to a Yearly Revenue",
-    summary: "AI sales representative converted at 16% of 60,000 calls and added $170k+/year.",
+    title: "6-figures Added to a Yearly Revenue",
+    summary:
+      "AI sales representative converted at 16% of more than 60,000 calls and added $170k+/year.",
   },
   {
     brand: "Organic Supplement Brand",
