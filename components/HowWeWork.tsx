@@ -1,17 +1,17 @@
 const steps = [
   {
     step: "STEP 1",
-    title: "Free Demo Call",
+    title: "Financially Qualified",
     desc: "15-minute demo call where we'll map your current revenue leaks, identify how much money you lose everyday",
   },
   {
     step: "STEP 2",
-    title: "Build & Results",
+    title: "Educated on the treatment",
     desc: "We build your custom AI agents. We rigorously test everything behind the scenes to ensure seamless performance before launch.",
   },
   {
     step: "STEP 3",
-    title: "Results & Optimization",
+    title: "Deposit Collected",
     desc: "Your AI agents go live. You'll see abandoned checkouts recovered and churn reduced, directly impacting your ROAS and MRR stability.",
   },
 ]
@@ -25,7 +25,9 @@ export default function HowWeWork() {
         </p>
         <h2 className="mt-4 font-heading text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
           <span className="block">Getting started is easy</span>
-          <span className="block mt-2 font-serif font-normal italic text-stone-500">It's Done-For-You</span>
+          <span className="block mt-2 font-serif font-normal italic text-stone-500">
+            It's Done-For-You
+          </span>
         </h2>
       </div>
 

@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 const agentCapabilities = [
-  "❌ LTV/CAC is under pressure. Pumping more money into ads doesn’t feel like a smart answer",
-  "❌ Early churn that eats your LTV",
-  "❌ Failed payments that never recover",
-  "❌ Abandoned checkouts and visitors leaving the site without buying",
+  "❌ 90% of your leads end up being 'Medicare Moms', price-shoppers, or tire-kickers who could never afford a $5,000+ cash-pay treatment.",
+  "❌ Your front desk is too busy running the clinic to call web leads within 5 minutes. Leads go ghost, and your ad spend is entirely wasted.",
+  "❌ When a patient actually does show up, they know nothing about regenerative medicine. You end up wasting an hour of your valuable time acting as a teacher, instead of a doctor.",
+  "❌ Agencies are terrified of asking leads for a consultation deposit because it makes their 'cost-per-lead' look bad. So, your schedule fills up with empty chairs.",
 ]
 
 const dottedBackground = {
@@ -15,30 +15,27 @@ const dottedBackground = {
 
 export default function WhyNowSection() {
   return (
-    <section
-      id="why-now"
-      className="relative overflow-hidden bg-white to-foreground py-16 sm:py-20"
-    >
-      <div aria-hidden="true" className="absolute inset-0 opacity-60" />
+    <section id="why-now" className="relative overflow-hidden bg-white to-foreground py-8 sm:py-16">
+      <div aria-hidden="true" />
 
-      <div className="container mx-auto max-w-3xl relative">
-        <div className=" text-center text-stone-800">
+      <div className="container relative">
+        <div className="text-center max-w-3xl mx-auto text-stone-800">
           <h2 className="mt-6 capitalize font-bold text-3xl sm:text-3xl">
-            "It's Not Ads — It's Your{" "}
-            <span className="bg-foreground px-2 text-stone-100 rounded-md">Conversations</span>."
+            The "Marketing Agency" Model is Broken for{" "}
+            <span className="bg-[#119c31] px-2 text-stone-100 rounded-md">
+              Regenerative Medicine
+            </span>
           </h2>
-          <h3 className=" text-stone-800 py-3 mt-10 text-2xl font-bold">You've done the work.</h3>
+          <h3 className=" text-stone-800 py-1 pt-8 sm:mt-10 text-center text-xl font-semibold">
+            {" "}
+            A generic lead-gen agency to grow your cash-pay treatments, brag about getting you 100
+            leads a month
+          </h3>
         </div>
 
         <div className="mx-auto mt-4 max-w-3xl">
           <div className="mt-8 space-y-4 text-left text-lg text-stone-600 sm:text-xl">
-            <p className=" text-stone-600">
-              You have product–market fit, steady traffic, and solid customer base.
-            </p>
-
-            <p className="font-bold">
-              But your growth has slowed... And now you’re stuck in a loop:
-            </p>
+            <p className="font-bold">Here is what happens when you rely on traditional agencies:</p>
             <ul className="mt-12 space-y-3 text-md text-stone-600">
               {agentCapabilities.map((item) => (
                 <li key={item} className="flex items-start justify-start gap-3">
@@ -46,44 +43,7 @@ export default function WhyNowSection() {
                 </li>
               ))}
             </ul>
-            <p className="pt-10 text-stone-600">
-              You’ve tried the agencies. You’ve layered on the tools. You’ve optimized the flows.
-              And what did it get you?
-            </p>
-            <p className="pt-10 text-stone-600">
-              The same ceiling. Just more dashboards to stare at.
-            </p>
           </div>
-          <div className="pt-3 mt-10 space-y-3 bg-stone-50 p-3 border-dashed border-4 border-amber-300 text-lg rounded-md shadow-xl">
-            <div className="py-4 space-y-4">
-              <p className="text-stone-900 text-xl font-semibold">Here’s the truth:</p>
-
-              <p className=" text-stone-600">
-                Every competitor in your space now has access to the same AI ad tools, the same
-                creative platforms, the same campaign playbooks. The acquisition game has been
-                commoditized.
-              </p>
-              <p className=" text-stone-600">
-                The brands that are winning aren’t winning just because they run better ads.
-              </p>
-              <p className=" text-stone-800 font-semibold">
-                They’re winning because of what happens after someone hits the site.
-              </p>
-              <p className=" text-stone-800 font-semibold">
-                For every $1 they spend, they get 5, 8, even 10 times more back in customer lifetime
-                value.
-              </p>
-              <p className=" text-stone-800">
-                And that's exactly what we <span className="font-bold">Do For You!</span>
-              </p>
-            </div>
-          </div>
-
-          {/*<div className="mt-12 text-center">
-            <Link href="#book-call">
-              <Button className="w-full sm:w-auto">Yes! Grow My Subscriptions</Button>
-            </Link>
-          </div>*/}
         </div>
       </div>
     </section>

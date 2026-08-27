@@ -38,7 +38,7 @@ export default function Hero() {
                   className="mx-2 h-auto w-20 sm:w-28 object-cover object-top sm:object-center"
                   loading="lazy"
                   decoding="async"
-                />{" "}
+                />
               </div>
             </motion.div>
             <motion.h1
@@ -46,9 +46,9 @@ export default function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{ duration: 0.7, delay: 0.05 }}
-              className=" text-stone-100 uppercase mx-3 capitaliz font-extrabold leading-tight sm:leading-[1.2] sm:px-10 tracking-normal text-3xl sm:text-5xl pt-3 sm:pt-4 "
+              className=" text-stone-100 upperase capitalize mx-3 capitaliz font-[family-name:var(--font-anton)] leading-2 sm:leading-[1.2] sm:px-10 text-3xl sm:text-6xl pt-3 sm:pt-4 "
             >
-              We'll Add 10-20% To Your Yearly Revenue Without Spending More On Traffic-Guaranteed
+              Double Your MRR Growth In 90 Days—Without Adding Headcount Or Ad Spend.
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 16 }}
@@ -57,15 +57,11 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="mt-2 sm:mt-2 mx-6 sm:mx-20 sm:text-2xl font-semibold text-[18px] sm:pt-2 sm:leading-snug text-stone-200"
             >
-              By installing a{" "}
-              <span className="bg-blue-600 px-1 font-bold text-stone-100 rounded-md">
-                1‑to‑1 Conversation Engine
-              </span>{" "}
-              that turns abandoned carts, failed payments, and cancellations into recurring
-              revenue—Done for you!
+              We build and manage custom AI AGENT around your subscription program that turns every
+              non-buyer into a 1-to-1 personalized conversation & brings high LTV customers
             </motion.p>
 
-            {/*  <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/w3b5z5x796.js" async type="module"></script><styl>wistia-player[media-id='w3b5z5x796'] */}
+            {/* <span className="bg-blue-600 px-1 uppercase leading-tight tracking-tighter font-black text-stone-100 rounded-md"></span>{" "} <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/w3b5z5x796.js" async type="module"></script><styl>wistia-player[media-id='w3b5z5x796'] */}
 
             <Script src="https://fast.wistia.com/player.js" strategy="afterInteractive" />
             <Script
@@ -83,7 +79,7 @@ export default function Hero() {
               }
             `}</style>
 
-            <div className="mx-auto mt-4 w-full sm:max-w-[880px] px-4 sm:mt-6">
+            <div className="mx-auto mt-4 w-full sm:max-w-[820px] px-4 sm:mt-6">
               <div className="overflow-hidden drop-shadow-2xl ">
                 {mounted && <wistia-player media-id="w3b5z5x796" aspect="1.77"></wistia-player>}
               </div>
@@ -93,9 +89,10 @@ export default function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="mt-4 sm:mt-6 flex justify-center items-center gap-1 italic mx-10 sm:mx-auto sm:text-[16px] text-[13px] sm:leading-snug text-stone-700"
+              className="mt-4 sm:mt-6 flex justify-center max-w-2xl font-medium items-center gap-1 italic mx-10 sm:mx-auto sm:text-[18px] text-[14px] sm:leading-snug text-stone-700"
             >
-              We captured multiple 6-figures in subscriptions using this exact AI system!
+              THis is custom AI agent software with human in-the-loop specific to your Brand and
+              your customer journey. We guarantee double mrr growth or you don't pay.
             </motion.p>
 
             <motion.div
@@ -133,7 +130,7 @@ export default function Hero() {
               className="mt-2 flex justify-center items-center gap-1 sm:mx-auto font-semibold sm:text-lg text-[12px] sm:leading-snug text-stone-800"
             >
               <BadgeCheck className="h-4 w-4 text-foreground" strokeWidth={2.1} />
-              Your biggest bottleneck stopping you from scaling
+              How this custom managed agents can change your brand
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 16 }}
@@ -153,7 +150,7 @@ export default function Hero() {
               className="mt-2 flex justify-center items-center gap-1 sm:mx-auto font-semibold sm:text-lg text-[12px] sm:leading-snug text-stone-800"
             >
               <BadgeCheck className="h-4 w-4 text-foreground" strokeWidth={2.1} />
-              How you can have 1 to 1 conversations work for your Brand
+              Personalized demo for your Subscription Brand
             </motion.p>
           </div>
         </div>

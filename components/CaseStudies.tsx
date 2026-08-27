@@ -10,7 +10,7 @@ export default function CaseStudies() {
           Results
         </h2>
         <h2 className="text-2xl mx-10 sm:text-2xl text-transparent inline-block mt-2 bg-stone-700 bg-clip-text">
-          More than 300,000 AI conversations analyzed
+          More than 300,000 conversations
         </h2>
       </div>
 

@@ -4,19 +4,13 @@
 export default function BluSalesRepSection() {
   return (
     <section className=" bg-white">
-      <div className=" flex min-h-[40vh] flex-col items-center justify-center py-24 sm:min-h-[50vh] sm:py-30 lg:py-36">
-        <div className="sm:mx-auto mx-0 sm:max-w-3xl text-center">
-          <p className="font-medium  text-[22px] leading-tight text-stone-700 sm:text-4xl sm:leading-[1.2]">
-            <span className="block mb-2">We build you the </span>
-            <span className="bg-foreground text-stone-100 font-semibold py-1 rounded-md px-2">
-              1-On-1 Conversation Engine!
-            </span>
-            <span className="block mt-8">It's like having a salesperson</span>
-            <span className="block">who learns about and reaches out</span>
-            <span className="block">with custom 1-to-1 message to</span>
-            <span className="block">
-              <span className={pillClassName}>every visitor and subscriber</span>
-            </span>
+      <div className=" flex min-h-[40vh] flex-col p-2 items-center justify-center py-24 sm:min-h-[50vh] sm:py-30 lg:py-36">
+        <div className="sm:mx-auto mx-2 sm:max-w-3xl text-center">
+          <p className="font-bold text-3xl leading-tight text-stone-700 sm:text-4xl sm:leading-[1.2]">
+            <p className="block mt-8">It's like having a salesperson</p>
+            that reaches out with
+            <p className="bg-foreground mx-4 text-stone-100 rounded-md">custom 1-to-1 message </p>
+            <p className="block"> to every visitor</p>
           </p>
 
           {/*<p className="sm:mx-auto mx-0 font-normal pt-12 font-serif text-[26px] leading-snug text-stone-900 sm:text-4xl sm:leading-[1.2]">

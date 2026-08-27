@@ -1,6 +1,6 @@
 import "./globals.css"
 import type { Metadata } from "next"
-import { Inter, DM_Sans, Courier_Prime } from "next/font/google"
+import { Inter, DM_Sans, Courier_Prime, Anton } from "next/font/google"
 // next-seo components removed for App Router compatibility
 import { site } from "@/content/site"
 import PilotScrollManager from "@/components/PilotScrollManager"
@@ -17,13 +17,18 @@ const courier = Courier_Prime({
   weight: ["400", "700"],
   variable: "--font-pixel", // This creates the CSS variable
 })
+const anton = Anton({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-anton",
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "Blujet AI — AI Agents for Shopify Brands",
+  title: "Blujet AI — Stem Cell & Regenerative Patient Acquisition System",
   description: site.description,
   openGraph: {
-    title: "Blujet AI — AI Agents for Shopify Brands",
+    title: "Blujet AI — Stem Cell & Regenerative Patient Acquisition System",
     description: site.description,
     images: [{ url: site.ogImage, width: 1200, height: 630 }],
     url: site.url,
@@ -33,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blujet AI — AI Agents for Shopify Brands",
+    title: "Blujet AI — Stem Cell & Regenerative Patient Acquisition System",
     description: site.description,
     images: [site.ogImage],
   },
@@ -41,7 +46,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${dm.variable} ${courier.variable} `}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${dm.variable} ${courier.variable} ${anton.variable}`}
+    >
       <head>
         <script
           key="org-jsonld"
@@ -77,7 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <RB2BLoader />
 
         <main id="main">{children}</main>
-        <Footer />
+
         <PilotScrollManager />
         <Analytics />
         <SpeedInsights />

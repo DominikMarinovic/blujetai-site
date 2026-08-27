@@ -64,8 +64,8 @@ export const heroCopy = {
   headline: "Recover +10–20% more revenue from the same traffic with AI Voice + SMS.",
   subhead:
     "We deploy done-for-you AI agents that intervene at the two most critical <>moments: abandoned checkouts and at-risk renewals. Our human-like conversations recapture lost sales and reduce churn, delivering profitable growth from your existing traffic.",
-  primaryCta: { label: "Yes! Grow my subscriptions", href: "#book-call" },
-  secondaryCta: { label: "Yes! Grow My Subscriptions", href: "#book-call" },
+  primaryCta: { label: "Show me my Salesperson", href: "#book-call" },
+  secondaryCta: { label: "Show me my Salesperson", href: "#book-call" },
 }
 
 export const caseStudies = [
