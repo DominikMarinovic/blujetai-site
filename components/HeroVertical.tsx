@@ -12,9 +12,9 @@ const heroVertical = {
   headline: "40 Financially Qualified Stem Cell Patients in 90 days - Guaranteed.",
   secondaryHeadline: "You only pay for qualified patients!",
   subhead:
-    "Pre-sold, Educated and medically qualified patients fully done for you. Consistent patients without calling leads and dealing with no shows!",
+    "Pre-sold, educated & medically qualified patients fully done for you. Consistent patients without calling leads and dealing with no shows!",
   cta: { label: "See if you Qualify", href: "#book-call" },
-  subcta: "No retainer. Pay only for qualified patient!",
+  subcta: "No retainer. We don't get paid until you get patients!",
 }
 
 export default function HeroVertical() {
@@ -33,10 +33,10 @@ export default function HeroVertical() {
             </Link>
 
             <div className="flex w-full flex-col items-center gap-6">
-              <h1 className="w-full text-center text-3xl uppercase font-extrabold leading-[1.2] tracking-[-0.03em] text-[#292929] min-[810px]:text-[42px] min-[1200px]:text-[48px]">
+              <h1 className="w-full text-center text-3xl capitalize font-extrabold leading-[1.2] tracking-[-0.03em] text-[#292929] min-[810px]:text-[42px] min-[1200px]:text-[48px]">
                 {heroVertical.headline}
               </h1>
-              <h2 className="w-full text-center text-[22px] font-bold leading-[1.2] italic capitalize tracking-[-0.03em] text-purple-600 min-[810px]:text-[28px] min-[1200px]:text-[32px]">
+              <h2 className="w-full text-center text-[22px] font-bold leading-[1.2] italic uppercase tracking-[-0.03em] text-purple-600 min-[810px]:text-[28px] min-[1200px]:text-[32px]">
                 {heroVertical.secondaryHeadline}
               </h2>
               {/*

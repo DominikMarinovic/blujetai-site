@@ -8,7 +8,7 @@ const heroVertical = {
   secondaryHeadline: "You only pay for qualified patients!",
   subhead:
     "Pre-sold, Educated and medically qualified patients fully done for you. Consistent patients without calling leads and dealing with no shows!",
-  cta: { label: "Book Free Consultation", href: "#book-call" },
+  cta: { label: "Book a Free Consultation", href: "#book-call" },
   subcta: "No retainer. Pay only for qualified patient!",
 }
 

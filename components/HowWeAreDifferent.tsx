@@ -27,7 +27,7 @@ export default function HowWeAreDifferentSection() {
       title: "Generate leads with authority & educational creative",
       desc: "We run Facebook and Instagram ads for you that educate your market, eliminate price-shoppers before they click, and establish your clinic as the premier authority. Built specifically for stem cell, PRP, and exosome compliant offers",
       icon: Megaphone,
-      accentColor: "text-[#8426db]",
+      accentColor: "text-[#994AD4]",
       bgAccent: "bg-purple-50",
       borderAccent: "border-purple-200",
     },
@@ -38,7 +38,7 @@ export default function HowWeAreDifferentSection() {
       desc: "Leads get contacted by our setter within 1-3 minutes. Our goal isn't max lead volume. It's max revenue per lead. Tire-kickers and price shoppers get filtered before they ever waste your time. We use an AI text agent to text people who opt in at night while scrolling, ensuring zero lead leakage.",
       icon: PhoneCall,
       subBadge: "Includes 24/7 AI Text Agent",
-      accentColor: "text-[#8426db]",
+      accentColor: "text-[#994AD4]",
       bgAccent: "bg-purple-50",
       borderAccent: "border-purple-200",
     },
@@ -48,7 +48,7 @@ export default function HowWeAreDifferentSection() {
       title: "Financially qualified and expectations set",
       desc: "Our team takes the sales/consulting call and takes a deposit for the in-person consult inside of your clinic—guaranteeing high commitment and eliminating no-shows. Patients arrive educated on the mechanism, anchored to a $10–25K price range, and financially pre-qualified.",
       icon: ShieldCheck,
-      accentColor: "text-[#52187e]",
+      accentColor: "text-[#994AD4]",
       bgAccent: "bg-purple-50",
       borderAccent: "border-purple-200",
     },
@@ -138,7 +138,7 @@ export default function HowWeAreDifferentSection() {
 
                 {step.subBadge && (
                   <div className="mt-5 pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-bold text-slate-600">
-                    <Bot className="h-4 w-4 text-[#8426db]" />
+                    <Bot className="h-4 w-4 text-[#994AD4]" />
                     <span>{step.subBadge}</span>
                   </div>
                 )}
