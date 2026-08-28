@@ -19,9 +19,7 @@ interface HowWeAreDifferentSectionProps {
   onOpenModal: () => void
 }
 
-export const HowWeAreDifferentSection: React.FC<HowWeAreDifferentSectionProps> = ({
-  onOpenModal,
-}) => {
+export default function HowWeAreDifferentSection() {
   const steps = [
     {
       number: "01",
