@@ -12,6 +12,8 @@ import {
   Bot,
   CheckCircle2,
 } from "lucide-react"
+import MyApp from "./Calcom"
+import Booker from "./BookerEmbed"
 
 interface HowWeAreDifferentSectionProps {
   onOpenModal: () => void
@@ -182,7 +184,7 @@ export const HowWeAreDifferentSection: React.FC<HowWeAreDifferentSectionProps> =
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-t from-purple-900 to-[#AC58EB] rounded-2xl p-8 sm:p-12 text-center text-white shadow-xl shadow-purple-950/20"
+          className="bg-gradient-to-t from-purple-900 to-[#AC58EB] rounded-2xl p-8 sm:p-12 text-center items-center text-white shadow-xl shadow-purple-950/20"
         >
           <span className="inline-block text-purple-200 text-xs sm:text-sm font-bold uppercase tracking-normal mb-3">
             No Retainer • Zero Ad Waste • No Risk
@@ -193,13 +195,8 @@ export const HowWeAreDifferentSection: React.FC<HowWeAreDifferentSectionProps> =
           <p className="text-purple-100 text-base sm:text-lg max-w-2xl mx-auto mb-8">
             Check if your city/region is available. We work with strictly one clinic per location!
           </p>
-          <button
-            onClick={onOpenModal}
-            id="how-we-are-different-cta-btn"
-            className="bg-white hover:bg-slate-100 text-[#52187e] font-extrabold text-base sm:text-lg tracking-wider uppercase px-9 sm:px-11 py-4 sm:py-4.5 rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.99] transition-all duration-200 cursor-pointer inline-flex items-center gap-2"
-          >
-            <span>SEE IF YOU QUALIFY</span>
-          </button>
+
+          <Booker />
           <p className="italic text-purple-200/90 text-sm sm:text-base mt-4 font-normal">
             No retainer. Pay only for qualified patient!
           </p>

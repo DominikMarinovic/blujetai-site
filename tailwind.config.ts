@@ -36,7 +36,7 @@ const config: Config = {
         sans: ["Inter", ...fontFamily.sans],
         heading: ["DM Sans", ...fontFamily.sans],
         pixel: ["var(--font-pixel)", ...fontFamily.mono],
-        serif: ['Playfair Display', 'serif'],
+        serif: ["Playfair Display", "serif"],
       },
       boxShadow: {
         glow: "0 0 30px rgba(57, 202, 255, 0.25)",

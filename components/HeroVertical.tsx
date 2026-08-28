@@ -2,14 +2,14 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-import Image from "next/image"
+import MyApp from "@/components/Calcom"
 
 // Hand-ported from the Framer export "Hero / Vertical-08".
 // Breakpoints match Framer's: <810px phone, 810–1199px tablet, >=1200px desktop.
 
 const heroVertical = {
   badge: "FOR STEM CELL, PRP & EXOSOME CLINICS",
-  headline: "30 Financially Qualified Stem Cell Patients in 90 days - Guaranteed.",
+  headline: "40 Financially Qualified Stem Cell Patients in 90 days - Guaranteed.",
   secondaryHeadline: "You only pay for qualified patients!",
   subhead:
     "Pre-sold, Educated and medically qualified patients fully done for you. Consistent patients without calling leads and dealing with no shows!",
@@ -33,10 +33,10 @@ export default function HeroVertical() {
             </Link>
 
             <div className="flex w-full flex-col items-center gap-6">
-              <h1 className="w-full text-center text-3xl capitalize font-bold leading-[1.2] tracking-[-0.03em] text-neutral-800 min-[810px]:text-[42px] min-[1200px]:text-[48px]">
+              <h1 className="w-full text-center text-3xl uppercase font-extrabold leading-[1.2] tracking-[-0.03em] text-[#292929] min-[810px]:text-[42px] min-[1200px]:text-[48px]">
                 {heroVertical.headline}
               </h1>
-              <h2 className="w-full text-center text-xl font-bold leading-[1.2] italic capitalize tracking-[-0.03em] text-purple-600 min-[810px]:text-[28px] min-[1200px]:text-[32px]">
+              <h2 className="w-full text-center text-[22px] font-bold leading-[1.2] italic capitalize tracking-[-0.03em] text-purple-600 min-[810px]:text-[28px] min-[1200px]:text-[32px]">
                 {heroVertical.secondaryHeadline}
               </h2>
               {/*
@@ -61,12 +61,9 @@ export default function HeroVertical() {
             transition={{ duration: 0.5 }}
             className="flex w-full flex-col items-center justify-center gap-4 pt-4 min-[810px]:flex-row"
           >
-            <Link
-              href={heroVertical.cta.href}
-              className="inline-flex min-h-[48px] items-center uppercase justify-center rounded-lg bg-gradient-to-t from-purple-900 to-[#AC58EB] px-[36px] py-[18px] text-xl font-bold leading-[1.2] tracking-[-0.01em] text-white transition-colors hover:bg-purple-700"
-            >
-              {heroVertical.cta.label}
-            </Link>
+            <div className="bg-white">
+              <MyApp />
+            </div>
           </motion.div>
 
           <p className="w-85% text-center text-[18px] italic font-normal leading-[1.5] tracking-[-0.012em] text-neutral-600">

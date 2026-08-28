@@ -223,7 +223,6 @@ wistia-player {
   display: none;
 }
 
-
 @media (min-width: 640px) {
   .hero-bg {
     background-image: url("/hero-hands-horizontal.png");

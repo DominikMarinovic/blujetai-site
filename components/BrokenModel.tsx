@@ -54,7 +54,7 @@ export const BrokenModelSection: React.FC<BrokenModelSectionProps> = ({ onOpenMo
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#0f172a] leading-[1.2] tracking-[-0.02em] mb-6 max-w-3xl mx-auto"
+            className="text-3xl sm:text-3xl md:text-4xl font-semibold text-[#0f172a] leading-[1.2] tracking-[-0.02em] mb-6 max-w-3xl mx-auto"
           >
             The &ldquo;Marketing Agency&rdquo; Model is Broken for Regenerative Medicine
           </motion.h2>
